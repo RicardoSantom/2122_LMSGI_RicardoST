@@ -1,0 +1,153 @@
+* { margin:0px; padding:0px;box-sizing: border-box;}
+a {
+    text-decoration:none; 
+    color:#000;}
+ul, ol {list-style: none;}
+body{
+    max-width: 1024px;
+    margin:0 auto;
+    background-image: url('../images/general.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav,.footer-web{
+    background-color: #00aeef;
+    color: #d4f3ff;
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 9px;
+}
+li a{
+    
+    color: #d4f3ff;
+}
+li{
+    background-color: #00aeef;
+    display: inline;
+    float: left;
+    height: 12px;
+    padding: 16px 24px 30px 24px;
+}
+ol li{border-right: 1px solid #fff;}
+li:last-child{border-style: none;}
+.footer-web ol{
+    top: 0;
+    height: 20px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.footer-web div{
+    bottom: 0;
+    left: 25%;
+    margin-top: 2em;
+    padding: 5px 0 0 0;
+}
+h1,h2{text-transform: uppercase;}
+h1{
+    font-family: 'Ubuntu-Light',sans-serif;
+    font-size: 1.35em;
+    letter-spacing: 8px;
+    font-weight: lighter;
+}
+h1:first-letter{font-size: 1.5em;}
+h2{
+    color: #00aeef;
+    font-family: 'Ubuntu-Bold',sans-serif;
+}
+h3{font-family: 'Ubuntu-BoldItalic',sans-serif}
+p{
+    font-family: 'Ubuntu-Italilc',sans-serif;
+}
+.seccion2{
+    width: 33%;
+    display:inline;
+    float:left;
+    height: 100%;
+}
+header{
+    border-left: 1px solid #00aeef;
+    padding: 0.5em 0 1em 0.5em;
+
+}
+main{
+    width: 100%;
+    height: 935px;
+    padding: 0 0 0 1em;
+    background-color: white;
+    margin: 0 auto;
+}
+.footer-web{
+    height: 90px;
+    clear: both;
+    margin:0 auto 4em auto;
+}
+.imagen{
+    width: 100%;
+}
+figure{
+    margin: 1em 0.5em 0 0.5em;
+}
+address{
+    font-family: 'Ubuntu-Medium',sans-serif;
+    padding-left: 5px;
+    padding-top: 1.5em;
+    font-size: 10px;
+}
+#articulo2{
+    border-left: 3px solid #00aeef;}
+table{
+    width:80%;
+    margin: 0 auto;
+    border-spacing: 6em 1.5em;
+}
+thead{
+    font-family: 'Ubuntu-Bold',sans-serif;
+    font-size: 1.25em;
+    vertical-align: top;
+}
+thead,tbody td{
+    text-align: center;}
+tbody td{
+    background-color: #00aeef;
+    
+    color: #d4f3ff;
+    border-radius: 5%;
+    padding: 0.15em 0.5em
+}
+th{
+    text-align: left;
+    font-weight: 500;
+}
+tbody{font-size: 1.5em;}
+caption{
+    caption-side: bottom;
+    background-color: #00aeef;
+    color: #d4f3ff;
+    border-radius: 5%;
+    padding: 1em 0;
+    margin: 1em 4em 0 6em;
+}
+
+#tabla2 caption{
+    margin: 1em 5em 0 1em;
+}
+#tabla2{
+    border-spacing: 1em 1.5em;
+    empty-cells: hide;
+    border-collapse: separate;
+}
+#tabla2 thead .tipo{text-align: center;}
+.tdespecial{
+    position: relative;
+    top: 25px;
+}
+.foto{
+    height: 234px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: 1em;
+}
