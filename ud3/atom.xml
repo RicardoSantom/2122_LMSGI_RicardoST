@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://servicios.elpais.com/rss/</id>
+    <title>RSS El Pais</title>
+    <updated>2002-10-02T10:00:00-05:00</updated>
+    <link href="https://servicios.elpais.com/rss/" rel="alternate" title="El Pais rss" hreflang="es-es"/>
+    <author>
+        <name>EDICIONES EL PAIS,S.L</name>
+        <email>ventacontenidos@prisanoticias.com</email>
+    </author>
+    <entry>
+        <id>https://elpais.com/espana/2022-01-17/la-ley-de-vivienda-deja-en-manos-de-las-autonomias-limitar-los-alquileres.html</id>
+        <title></title>
+        <updated>2002-10-02T10:00:00-05:00</updated>
+        <author>Carlos E Cué</author>
+        <content></content>
+        <link href="https://servicios.elpais.com/rss/">https://elpais.com/espana/2022-01-17/la-ley-de-vivienda-deja-en-manos-de-las-autonomias-limitar-los-alquileres.html</link>
+        <summary></summary>
+    </entry>
+</feed>
