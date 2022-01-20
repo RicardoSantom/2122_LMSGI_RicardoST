@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+XML02.- Escribir un documento XML que almacene la siguiente información:
+CONTINENTE PAÍS CAPITAL
+EUROPA ALEMANIA BERLÍN
+AMÉRICA ARGENTINA BUENOS AIRES
+AMÉRICA BAHAMAS NASSAU
+ASIA AFGANISTÁN KABUL
+ASIA ARABIA SAUDITA RIAD
+
+-->
+<mundo>
+    <fila>
+        <continente>europa</continente>
+        <pais>Alemania></pais>
+        <capital>Berlín</capital>
+    </fila>
+    <fila>
+        <continente>América</continente>
+        <pais>Argentina</pais>
+        <capital>Buenos Aires</capital>
+    </fila>
+     <fila>
+        <continente>América</continente>
+        <pais>Bahamas</pais>
+        <capital>Nassau</capital>
+    </fila>
+     <fila>
+        <continente>Asia</continente>
+        <pais>Afganistán</pais>
+        <capital>Kabul</capital>
+    </fila>
+     <fila>
+        <continente>Asia</continente>
+        <pais>Arabia Saudita</pais>
+        <capital>Riad</capital>
+    </fila>
+</mundo>

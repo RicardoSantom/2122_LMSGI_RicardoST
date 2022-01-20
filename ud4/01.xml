@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XML01.- Escribir un documento XML que almacene la información de un mail y contenga la siguiente información: 
+remitente, destinatario(s), fecha del mensaje, asunto, mensaje, ficheros adjuntos (por cada fichero debe especificar el 
+nombre y el tipo MIME). No utilizar atributos.-->
+<email>
+    <remitente>remitentepesao@gmail.com</remitente>
+    <destinatarios>
+        <destinatario>destinarariopaciente@gmail.com</destinatario>
+        <destinatario>Victor@gmilio.com</destinatario>
+        <destinatario>Apa@gmilio.com</destinatario>
+    </destinatarios>
+    <fecha>2022/01/20</fecha>
+    <asunto>Email de prueba</asunto>
+    <mensaje>Aquí te cuento mis duelos y quebrantos</mensaje>
+    <fichero>
+        <nombre>index.html</nombre>
+        <tipo>text/html</tipo>
+    </fichero>
+    <fichero>
+        <nombre>index2.html</nombre>
+        <tipo>text/html</tipo>
+    </fichero>
+</email>
