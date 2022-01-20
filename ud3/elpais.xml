@@ -4,7 +4,7 @@ Fecha 13/01/2022
 Descripcion: Notiticas de el pais
 Documento: RSS
 -->
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Ricardo Santiago Tomé - El pais - Ultimas noticias</title>
         <link>https://elpais.com</link>
@@ -12,25 +12,26 @@ Documento: RSS
         <category>noticias</category>
         <category>España</category>
         <category>Medio ambiente</category>
-        <language>es</language>
-        <pubDate>Mon, 17 Jan 2022 08:54:00+0100</pubDate>
+        <language>es-ES</language>
+        <!--<pubDate>Mon, 17 Jan 2022</pubDate>-->
+        <lastBuildDate>Mon, 17 Jan 2022 06:13:05 GMT</lastBuildDate>
         <item>
             <title>Lanzarote: la isla que no quería crecer tanto</title>
             <link>https://elpais.com/clima-y-medio-ambiente/2022-01-01/lanzarote-la-isla-que-no-queria-crecer-tanto.html</link>
-            <description>Tres décadas después del plan pionero que puso freno a la expansión urbanística en la tierra de César Manrique,
-                este territorio canario constituye hoy un difícil rompecabezas ambiental por su dependencia casi total del exterior</description>
-            <guid isPermaLink="true">https://elpais.com/clima-y-medio-ambiente/2022-01-01/lanzarote-la-isla-que-no-queria-crecer-tanto.html</guid>
-             <![CDATA[<p>Tres décadas después del plan pionero que puso freno a la expansión urbanística en la tierra de <strong>César Manrique</strong>,
+            <description><![CDATA[<p>Tres décadas después del plan pionero que puso freno a la expansión urbanística en la tierra de <strong>César Manrique</strong>,
                 este territorio canario constituye hoy un difícil rompecabezas ambiental por su dependencia casi total del exterior</p>
-                <image>
-                     <a href="https://www.facebook.com/elpais"/>
+                <img>
+                     <a href="https://www.facebook.com/elpais">
                         <img height="100" src="images/CesarManrique.jpg" alt="Cesar Manrique en Lanzarote" id="logo">
                     </a>
                     <figcaption>El artista César Manrique en una manifestación contra la construcción de un complejo turístico en la playa de Los Pocillos, en Lanzarote, en 1988.. Original por
-                         <a href="https://www.facebook.com/elpais"/>FUNDACIÓN CÉSAR MANRIQUE</a>
+                         <a href="https://www.facebook.com/elpais">FUNDACIÓN CÉSAR MANRIQUE</a>
                     </figcaption>
-                </image>
+                </img>
                           1ºDAW]]>
+            </description>
+            <guid isPermaLink="true">https://elpais.com/clima-y-medio-ambiente/2022-01-01/lanzarote-la-isla-que-no-queria-crecer-tanto.html</guid>
+            <enclosure url="https://images/CesarManrique.jpg" length="17773" type="image/jpg" />
         </item>
         <item>
             <title>¿Cómo será 2060? El mapa con nuestros posibles futuros climáticos</title>
