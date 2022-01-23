@@ -4,7 +4,9 @@
 <title>Feed Subscriptions</title>
 </head>
 <body>
-      <outline text="Lo pais - Ultimas noticias" title="El pais - Ultimas noticias" type="rss" 
+      <outline text="Lo pais - Ultimas noticias -Atom" title="El pais - Ultimas noticias" type="rss" 
             xmlUrl="http://192.168.2.114/ud3/elpais.xml" htmlUrl="https://elpais.com"/>
+      <outline text="Lo pais - Ultimas noticias - Atom" title="El pais - Ultimas noticias" type="rss" 
+            xmlUrl="http://192.168.2.114/ud3/atom.xml" htmlUrl="https://elpais.com"/>
 </body>
 </opml>
