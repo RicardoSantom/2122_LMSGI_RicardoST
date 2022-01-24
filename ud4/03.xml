@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="03.xsl" type="text/xsl"?>
+<!DOCTYPE hechoshistoricos[
+    <!ELEMENT hechoshistoricos (acontecimiento+)>
+    <!ELEMENT acontecimiento (descripcion?,fecha?)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT fecha (dia+,mes+,anyo+)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anyo (#PCDATA)>
+]>
 <hechoshistoricos>
     <acontecimiento>
         <descripcion>Se funda Youtube</descripcion>

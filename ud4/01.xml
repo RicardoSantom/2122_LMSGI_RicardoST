@@ -2,6 +2,19 @@
 <!--XML01.- Escribir un documento XML que almacene la información de un mail y contenga la siguiente información: 
 remitente, destinatario(s), fecha del mensaje, asunto, mensaje, ficheros adjuntos (por cada fichero debe especificar el 
 nombre y el tipo MIME). No utilizar atributos.-->
+    <!DOCTYPE email[
+    <!ELEMENT email (remitente,destinatarios,fecha,asunto,mensaje?,ficheros?)>
+    <!ELEMENT remitente (#PCDATA)>
+    <!ELEMENT destinatarios (destinatario+)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT mensaje (#PCDATA)>
+    <!ELEMENT ficheros (fichero*)>
+    <!ELEMENT fichero (nombre*,tipo*)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+]>
 <email>
     <remitente>remitentepesao@gmail.com</remitente>
     <destinatarios>
@@ -12,12 +25,14 @@ nombre y el tipo MIME). No utilizar atributos.-->
     <fecha>2022/01/20</fecha>
     <asunto>Email de prueba</asunto>
     <mensaje>Aquí te cuento mis duelos y quebrantos</mensaje>
-    <fichero>
-        <nombre>index.html</nombre>
-        <tipo>text/html</tipo>
-    </fichero>
-    <fichero>
-        <nombre>index2.html</nombre>
-        <tipo>text/html</tipo>
-    </fichero>
+    <ficheros>
+        <fichero>
+            <nombre>index.html</nombre>
+            <tipo>text/html</tipo>
+        </fichero>
+        <fichero>
+            <nombre>index2.html</nombre>
+            <tipo>text/html</tipo>
+        </fichero>
+    </ficheros>
 </email>

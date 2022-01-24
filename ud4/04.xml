@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum[
+    <!ELEMENT curriculum (nombre+,apellidos+,residencia*,datos+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (apellido+)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT residencia (ciudad?,pais?)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT datos (telefono?,correo*,linkedin?,descripcion?,competencias?)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT correo (#PCDATA)>
+    <!ELEMENT linkedin (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT competencias (competencia+)>
+    <!ELEMENT competencia (nombre+,nivel+)>
+]>
+<curriculum>
+    <nombre>Ricardo</nombre>
+    <apellidos>
+        <apellido>Santiago</apellido>
+        <apellido>Tomé</apellido>
+    </apellidos>
+    <residencia>
+        <ciudad>Benavente</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <datos>
+        <telefono>555</telefono>
+        <correo>uno@gmail.com</correo>
+        <linkedin>yoenlinkedin</linkedin>
+        <descripcion>Un tío competente</descripcion>
+        <competencias>
+            <competencia>
+                <nombre>HTML5</nombre>
+                <nivel>Tuercetiquetas</nivel>
+            </competencia>
+        </competencias>
+        <formacion>
+            <titulo nivel="medio">
+                <nombre>Bachillerato</nombre>
+                <centro>IES María de Molina</centro>
+            </titulo>
+            <titulo nivel="medio">
+                <nombre>E.S.O</nombre>
+                <centro>IES María de Molina</centro>
+            </titulo>
+        </formacion>
+        <experiencia>
+            <empresa>
+                <puesto>dosificador</puesto>
+                <nombre>Agropal,S.L</nombre>
+                <anyoinicio>2005</anyoinicio>
+                <anyofin>2010</anyofin>
+            </empresa>
+            <empresa>
+                <puesto>vividor</puesto>
+                <nombre>EnElAlambre S.L</nombre>
+                <anyoinicio>2010</anyoinicio>
+            </empresa>
+        </experiencia>
+    </datos>
+</curriculum>

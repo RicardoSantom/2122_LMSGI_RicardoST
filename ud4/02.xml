@@ -7,8 +7,14 @@ AMÉRICA ARGENTINA BUENOS AIRES
 AMÉRICA BAHAMAS NASSAU
 ASIA AFGANISTÁN KABUL
 ASIA ARABIA SAUDITA RIAD
-
 -->
+<!DOCTYPE mundo[
+    <!ELEMENT mundo (fila+)>
+    <!ELEMENT fila (continente*,pais*,capital*)>
+    <!ELEMENT continente (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT capital (#PCDATA)>
+]>
 <mundo>
     <fila>
         <continente>europa</continente>
