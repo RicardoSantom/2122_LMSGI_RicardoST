@@ -1,0 +1,11 @@
+ejemplo{
+    white-space:pre;
+}
+lenguaje::after {
+    content:'\A';white-space:pre;
+}
+nombre{
+    color:red;
+    font-size: 20px;
+    border: 2px red solid;
+}

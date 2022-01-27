@@ -13,13 +13,16 @@
     <!ELEMENT linkedin (#PCDATA)>
     <!ELEMENT descripcion (#PCDATA)>
     <!ELEMENT competencias (competencia+)>
-    <!ELEMENT competencia (nombre+,nivel+)>
+    <!ELEMENT competencia EMPTY>
+    <!ATTLIST competencia
+              nombre CDATA #REQUIRED
+              nivel (BAJO | MEDIO | ALTO) "MEDIO" >
     <!ELEMENT nivel (#PCDATA)>
-    <!ELEMENT formacion (titulo+)>
-    <!ELEMENT titulo (nombre,centro)>
-    <!ATTLIST titulo
-              nivel CDATA #REQUIRED>
-    <!ELEMENT centro (#PCDATA)>
+    <!ELEMENT formacion EMPTY>
+    <!ATTLIST formacion
+              titulo CDATA #REQUIRED
+              centro CDATA #REQUIRED
+              anyo CDATA #IMPLIED>
     <!ELEMENT experiencia (empresa+)>
     <!ELEMENT empresa (puesto,nombre,anyoinicio,anyofin?)>
     <!ELEMENT puesto (#PCDATA)>
@@ -42,21 +45,11 @@
         <linkedin>yoenlinkedin</linkedin>
         <descripcion>Un tío competente</descripcion>
         <competencias>
-            <competencia>
-                <nombre>HTML5</nombre>
-                <nivel>Tuercetiquetas</nivel>
-            </competencia>
+            <competencia nombre="HTML5" nivel="ALTO"/>
+            <competencia nombre="CSS"/>
         </competencias>
-        <formacion>
-            <titulo nivel="medio">
-                <nombre>Bachillerato</nombre>
-                <centro>IES María de Molina</centro>
-            </titulo>
-            <titulo nivel="medio">
-                <nombre>E.S.O</nombre>
-                <centro>IES María de Molina</centro>
-            </titulo>
-        </formacion>
+        <formacion titulo="Bachillerato" centro="IES Maria de Molina" anyo="2000"/>
+        <formacion titulo="E.S.O" centro="IES Maria de Molina" anyo="2004"/>
         <experiencia>
             <empresa>
                 <puesto>dosificador</puesto>

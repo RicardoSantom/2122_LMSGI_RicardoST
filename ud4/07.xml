@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE grupo [
-<!ELEMENT grupo (estudiante)*>
-<!ATTLIST grupo 
-    xmlns:xsi CDATA #IMPLIED 
-    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
->
+<!ELEMENT grupo (estudiante+)>
 <!ELEMENT estudiante (#PCDATA)>
 <!ATTLIST estudiante 
- codEstudiante ID #REQUIRED
- codTutor1 IDREF #IMPLIED
- codTutor2 IDREF #IMPLIED
- codTutor3 IDREF #IMPLIED>
+        codEstudiante ID #REQUIRED
+        codTutor IDREFS #IMPLIED>
 ]>
 <grupo>
-    <estudiante codEstudiante="E1" codTutor1="E2" codTutor2="E3">
+    <estudiante codEstudiante="A1" codTutor="A2 A3">
         Ricardo
     </estudiante>
-    <estudiante codEstudiante="E2">
+    <estudiante codEstudiante="A2">
         Víctor
     </estudiante>
-    <estudiante codEstudiante="E3">
+    <estudiante codEstudiante="A3">
         David
     </estudiante>
-    <estudiante codEstudiante="E4" codTutor3="E2">
+    <estudiante codEstudiante="A4" codTutor="A2">
         Diego
     </estudiante>
 </grupo>
