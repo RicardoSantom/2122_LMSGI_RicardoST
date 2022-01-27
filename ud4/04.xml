@@ -7,13 +7,24 @@
     <!ELEMENT residencia (ciudad?,pais?)>
     <!ELEMENT ciudad (#PCDATA)>
     <!ELEMENT pais (#PCDATA)>
-    <!ELEMENT datos (telefono?,correo*,linkedin?,descripcion?,competencias?)>
+    <!ELEMENT datos (telefono*,correo*,linkedin?,descripcion?,competencias*,formacion*,experiencia*)>
     <!ELEMENT telefono (#PCDATA)>
     <!ELEMENT correo (#PCDATA)>
     <!ELEMENT linkedin (#PCDATA)>
     <!ELEMENT descripcion (#PCDATA)>
     <!ELEMENT competencias (competencia+)>
     <!ELEMENT competencia (nombre+,nivel+)>
+    <!ELEMENT nivel (#PCDATA)>
+    <!ELEMENT formacion (titulo+)>
+    <!ELEMENT titulo (nombre,centro)>
+    <!ATTLIST titulo
+              nivel CDATA #REQUIRED>
+    <!ELEMENT centro (#PCDATA)>
+    <!ELEMENT experiencia (empresa+)>
+    <!ELEMENT empresa (puesto,nombre,anyoinicio,anyofin?)>
+    <!ELEMENT puesto (#PCDATA)>
+    <!ELEMENT anyoinicio (#PCDATA)>
+    <!ELEMENT anyofin (#PCDATA)>
 ]>
 <curriculum>
     <nombre>Ricardo</nombre>
