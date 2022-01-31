@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--XML01.- Escribir un documento XML que almacene la información de un mail y contenga la siguiente información: 
 remitente, destinatario(s), fecha del mensaje, asunto, mensaje, ficheros adjuntos (por cada fichero debe especificar el 
 nombre y el tipo MIME). No utilizar atributos.-->
-    <!DOCTYPE email[
-    <!ELEMENT email (remitente,destinatarios,fecha,asunto,mensaje?,ficheros?)>
+   <!DOCTYPE email[
+    <!ELEMENT email (remitente+,destinatarios,fecha,asunto,mensaje?,ficheros?)>
+    <!ATTLIST email
+              xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
     <!ELEMENT remitente (#PCDATA)>
     <!ELEMENT destinatarios (destinatario+)>
     <!ELEMENT destinatario (#PCDATA)>
     <!ELEMENT fecha (#PCDATA)>
     <!ELEMENT asunto (#PCDATA)>
     <!ELEMENT mensaje (#PCDATA)>
-    <!ELEMENT ficheros (fichero*)>
-    <!ELEMENT fichero (nombre*,tipo*)>
+    <!ELEMENT ficheros (fichero+)>
+    <!ELEMENT fichero (nombre,tipo)>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT tipo (#PCDATA)>
 ]>
-<email>
+<email xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='01.xsd'>
     <remitente>remitentepesao@gmail.com</remitente>
     <destinatarios>
         <destinatario>destinarariopaciente@gmail.com</destinatario>
         <destinatario>Victor@gmilio.com</destinatario>
         <destinatario>Apa@gmilio.com</destinatario>
     </destinatarios>
-    <fecha>2022/01/20</fecha>
+    <fecha>2022-01-20</fecha>
     <asunto>Email de prueba</asunto>
     <mensaje>Aquí te cuento mis duelos y quebrantos</mensaje>
     <ficheros>
