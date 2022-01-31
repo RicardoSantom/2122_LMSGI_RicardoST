@@ -15,7 +15,7 @@ body{
 }
 h1{
    color:#92BE9C;
-   font-family: 'Goldman-Bold',cursive;
+   font-family: 'Goldman-Bold-ttf',cursive;
    font-size: 1.5em;
    letter-spacing: 0.3em;
    text-decoration: underline RGB(241, 172, 81)wavy;
@@ -30,7 +30,7 @@ main hr{
     background-color: #cc0033;
 }
 main p{
-    font-family: 'Goldman-Regular',cursive;
+    font-family: 'Goldman-Regular-ttf',cursive;
     background-color:#92BE9C;
     color: #F5F5F4;
     padding: 0.5em 0 0.5em 0.3em;

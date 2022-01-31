@@ -157,6 +157,8 @@ div.primera,div figure{
 #llanto,#bajando,#familia,#banderas{
     position:absolute;
     opacity: 4;
+    max-width: 250px;
+    max-height: 160px;
     min-height: 25px;
     min-width: 25px;
     border-radius: 5%;
@@ -166,15 +168,15 @@ div.primera,div figure{
     top: 3%;
     border: 8px blue solid;
 }
-#bajando{
-    left: 79.5%;
-    top: 3%;
-    border: 8px red solid;
-}
 #familia{
     top: 67%;
     border: 8px yellow solid;
     left: 2%;
+}
+#bajando{
+    left: 79.5%;
+    top: 3%;
+    border: 8px red solid;
 }
 #banderas{
     top: 67%;
