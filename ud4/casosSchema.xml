@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<casos xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='casosSchema.xsd'
+       tipo="uno">
+    <repetidor opcion="yes"/>
+    <nombre>Manolito Gafotas</nombre>
+    <edad>18</edad>
+    <estadocivil>casado</estadocivil>
+    <marcacoche>Opel</marcacoche>
+    <asignatura nota="10">Lenguaje de Marcas</asignatura>
+</casos>

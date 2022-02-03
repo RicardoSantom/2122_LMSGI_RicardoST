@@ -84,10 +84,10 @@ and open the template in the editor.
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="fecha" type="xs:date"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
+            <xs:attribute name="fecha" type="xs:date"/>
         </xs:complexType>
     </xs:element>
 </xs:schema>

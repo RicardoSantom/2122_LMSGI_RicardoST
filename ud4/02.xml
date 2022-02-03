@@ -10,12 +10,16 @@ ASIA ARABIA SAUDITA RIAD
 -->
 <!DOCTYPE mundo[
     <!ELEMENT mundo (fila+)>
+    <!ATTLIST mundo 
+                xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
     <!ELEMENT fila (continente*,pais*,capital*)>
     <!ELEMENT continente (#PCDATA)>
     <!ELEMENT pais (#PCDATA)>
     <!ELEMENT capital (#PCDATA)>
 ]>
-<mundo>
+<mundo xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='02.xsd'>
     <fila>
         <continente>europa</continente>
         <pais>Alemania></pais>
