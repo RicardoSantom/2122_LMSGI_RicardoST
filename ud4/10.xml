@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+XML10.- Se pide almacenar en el documento XML 10.xml los datos relativos a la predicción meteorológica 
+a 7 días de un municipio. El formato es el que se detalla a continuación:>
+-->
+<!DOCTYPE prediccion SYSTEM '10.dtd'>
+<prediccion xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='10.xsd'>
+    <municipio id="A1">
+        <nombre>Benavente</nombre>
+        <provincia>Zamora</provincia>
+    </municipio>
+    <dia fecha="2022-02-02">
+        <prob_precipitacion>10</prob_precipitacion>
+        <estado_cielo descripcion="Intervalos nubosos">50</estado_cielo>
+        <viento>
+            <direccion>Norte</direccion>
+            <velocidad>60</velocidad>
+        </viento>
+        <temperatura>
+            <maxima>15</maxima>
+            <minima>-2</minima>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-02-03">
+        <prob_precipitacion>10</prob_precipitacion>
+        <estado_cielo descripcion="Nubosos">80</estado_cielo>
+        <viento>
+            <direccion>Norte</direccion>
+            <velocidad>80</velocidad>
+        </viento>
+        <temperatura>
+            <maxima>17</maxima>
+            <minima>0</minima>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-02-04">
+        <prob_precipitacion>10</prob_precipitacion>
+        <estado_cielo descripcion="Intervalos nubosos">50</estado_cielo>
+        <viento>
+            <direccion>Norte</direccion>
+            <velocidad>60</velocidad>
+        </viento>
+        <temperatura>
+            <maxima>15</maxima>
+            <minima>-2</minima>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-02-05">
+        <prob_precipitacion>10</prob_precipitacion>
+        <estado_cielo descripcion="Intervalos nubosos">50</estado_cielo>
+        <viento>
+            <direccion>Norte</direccion>
+            <velocidad>60</velocidad>
+        </viento>
+        <temperatura>
+            <maxima>15</maxima>
+            <minima>-2</minima>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-02-06">
+        <prob_precipitacion>10</prob_precipitacion>
+        <estado_cielo descripcion="Intervalos nubosos">50</estado_cielo>
+        <viento>
+            <direccion>Norte</direccion>
+            <velocidad>60</velocidad>
+        </viento>
+        <temperatura>
+            <maxima>15</maxima>
+            <minima>-2</minima>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-02-07">
+        <prob_precipitacion>10</prob_precipitacion>
+        <estado_cielo descripcion="Intervalos nubosos">50</estado_cielo>
+        <viento>
+            <direccion>Norte</direccion>
+            <velocidad>60</velocidad>
+        </viento>
+        <temperatura>
+            <maxima>15</maxima>
+            <minima>-2</minima>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-02-08">
+        <prob_precipitacion>10</prob_precipitacion>
+        <estado_cielo descripcion="Intervalos nubosos">50</estado_cielo>
+        <viento>
+            <direccion>Norte</direccion>
+            <velocidad>60</velocidad>
+        </viento>
+        <temperatura>
+            <maxima>15</maxima>
+            <minima>-2</minima>
+        </temperatura>
+    </dia>
+</prediccion>
