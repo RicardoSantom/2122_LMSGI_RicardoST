@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE curriculum[
     <!ELEMENT curriculum (nombre+,apellidos+,residencia*,datos+)>
+    <!ATTLIST curriculum
+              xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT apellidos (apellido+)>
     <!ELEMENT apellido (#PCDATA)>
@@ -29,7 +32,8 @@
     <!ELEMENT anyoinicio (#PCDATA)>
     <!ELEMENT anyofin (#PCDATA)>
 ]>
-<curriculum>
+<curriculum xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='04.xsd'>
     <nombre>Ricardo</nombre>
     <apellidos>
         <apellido>Santiago</apellido>
@@ -41,7 +45,7 @@
     </residencia>
     <datos>
         <telefono>555</telefono>
-        <correo>uno@gmail.com</correo>
+        <correo>uno.dos@gmail.3.com</correo>
         <linkedin>yoenlinkedin</linkedin>
         <descripcion>Un tío competente</descripcion>
         <competencias>

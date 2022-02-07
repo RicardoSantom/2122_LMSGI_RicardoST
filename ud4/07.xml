@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE grupo [
-<!ELEMENT grupo (estudiante+)>
+<!ELEMENT grupo (estudiante*)>
+<!ATTLIST grupo
+        xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
 <!ELEMENT estudiante (#PCDATA)>
 <!ATTLIST estudiante 
         codEstudiante ID #REQUIRED
         codTutor IDREFS #IMPLIED>
 ]>
-<grupo>
+<grupo xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='07.xsd'>
     <estudiante codEstudiante="A1" codTutor="A2 A3">
         Ricardo
     </estudiante>

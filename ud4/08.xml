@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE lugares [
 <!ELEMENT lugares (#PCDATA|lugar)*>
+<!ATTLIST lugares
+        xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
 <!ELEMENT lugar (#PCDATA)>
 ]>
-<lugares>En el
+<lugares xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='08.xsd'>En el
     <lugar>polo norte</lugar>
     hace mucho frio. Pero,en el 
     <lugar>desierto del Sahara</lugar>
