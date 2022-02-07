@@ -1,28 +1,27 @@
 *{
     margin:0 auto;
     list-style: none;
+    box-sizing: border-box;
 }
 body{
     width:100%;
     background: rgb(243,244,234);
     background: radial-gradient(circle, rgba(243,244,234,1) 0%, rgba(174,175,167,1) 100%);
+    margin:0 auto;  
+    min-width: 475px;
 }
 header{
     font-size: 3.25em;
     text-align: center;
-    color: #b6675b
+    color: #f4f4f4;
+    padding: 0.5em ;
+    background-color: #666666;
 }
 .encabezado{
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-attachment:fixed;
-    background-size:cover;
-    background-color:#FFDFD3;
+    background-color:#d6675b;
     text-align: center;
-    box-sizing: border-box;
-    display: block;
     height: 100px;
-    position:relative;
+    width: 100%;
 }
 .topnav{
     display: inline-block;
@@ -45,35 +44,163 @@ header{
     color: black;
 }
 .topnav a.active {
-    background-color: lightsteelblue;
+    background-color: #666666;
     color: white;
 }
-#contenido{
-    height: 90%;
+main{
     width: 100%;
+    font-family: 'Goldman-Regular-ttf';
+    height: 750em;
+    display: inline-block;
+}
+article{
+    width: 100%;
+    height: 60em;
+}
+#article1{
+    width: 100%;
+    background-color: #f4f4f4;
+    opacity: 0.6;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-height: 890px;
+}
+#article1 h2,section h3{
+    text-align: center;
+    font-size: 30px;
+}
+#article1 h2{
+    padding-bottom: 1em;
+    font-size: 40px;
 }
 #unidad2{
-    margin:2em 6em;
-    width: 99%;
+    background-color:#f4f4f4;
+    background-image: url(../images/HTML5-CSS3_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 100%;
+    opacity: 1;
 }
 ul{
     border:1px darkslategrey solid;
-   box-shadow: 6px -3px 5px black;
-   width: 16em;
-   height: 9em;
-   border-radius: 5%;
-   background-color: #b6c6c6;
-   display:inline-block;
-   padding:20px;
-   margin: 10px;
-   font-size: 20px;
-   text-align: center;
+    box-shadow: 6px -3px 5px black;
+    height: 12em;
+    max-width: 12em;
+    min-width: 10em;
+    border-radius: 5%;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    display:inline-grid;
+}
+#unidad2:nth-child(1){
+    float:left;
+}
+#unidad2:nth-child(n+12){
+    float:right;
 }
 li{
-    margin:1em;
+    padding:0.65em;
+    opacity: 1;
+}
+li p{
+    color: black;
 }
 li a{
     color: #b6675b;
+    font-weight: 900;
+}
+#index01:hover{
+   background-color: #666666;
+    background-image:url(../images/html01.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index02:hover{
+   background-color: #666666;
+    background-image:url(../images/html02.png);
+    
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index03:hover{
+   background-color: #666666;
+    background-image:url(../images/html03.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index04:hover{
+   background-color: #666666;
+    background-image:url(../images/html04.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index05:hover{
+   background-color: #666666;
+    background-image:url(../images/html05.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index06:hover{
+   background-color: #666666;
+    background-image:url(../images/html06.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index07:hover{
+   background-color: #666666;
+    background-image:url(../images/html07.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index08:hover{
+   background-color: #666666;
+    background-image:url(../images/html08.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index09:hover{
+   background-color: #666666;
+    background-image:url(../images/html09.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index10:hover{
+   background-color: #666666;
+    background-image:url(../images/html10.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index11:hover{
+   background-color: #666666;
+    background-image:url(../images/html11.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#index12:hover{
+   background-color: #666666;
+    background-image:url(../images/html12.png);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#unidad3{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width:100%;
 }
 #rssbutton{
     width: 50px;

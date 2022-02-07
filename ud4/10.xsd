@@ -8,6 +8,14 @@ and open the template in the editor.
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
+    <!--declaración tipos complejos-->
+    <xs:simpleType name="tipoEstado">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!--Declaración de elementos-->
     <xs:element name="prediccion">
         <xs:complexType>
             <xs:sequence>
@@ -17,23 +25,21 @@ and open the template in the editor.
                             <xs:element name="nombre" type="xs:string"/>
                             <xs:element name="provincia" type="xs:string"/>
                         </xs:sequence>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute name="id" use="required">
-                                    <xs:simpleType>
-                                        <xs:restriction base="xs:string"/>
-                                    </xs:simpleType>
-                                </xs:attribute>
-                            </xs:extension>
-                        </xs:simpleContent>
+                        <xs:attribute name="id" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[A-Z]{1}[0-9]{1}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="dia">
+                <xs:element name="dia" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="prob_precipitacion">
                                 <xs:simpleType>
-                                    <xs:restriction  base="xs:int">
+                                    <xs:restriction  base="xs:integer">
                                         <xs:minInclusive value="0"/>
                                         <xs:maxInclusive value="10"/>
                                     </xs:restriction>
@@ -41,11 +47,17 @@ and open the template in the editor.
                             </xs:element>
                             <xs:element name="estado_cielo">
                                 <xs:complexType>
-                                    <xs:attribute name="descripcion" use="required">
-                                        <xs:simpleType>
-                                            <xs:restriction base="xs:string"/>
-                                        </xs:simpleType>
-                                    </xs:attribute>
+                                    <xs:simpleContent>
+                                        <xs:extension base="tipoEstado">
+                                            <xs:attribute name="descripcion" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:pattern value="Nubosos|Intervalos nubosos|Despejados|Más nubes que claros|Más claros que nubes"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>   
+                                        </xs:extension>
+                                    </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="viento">
@@ -60,7 +72,7 @@ and open the template in the editor.
                                         </xs:element>
                                         <xs:element name="velocidad">
                                             <xs:simpleType>
-                                                <xs:restriction base="xs:int">
+                                                <xs:restriction base="xs:integer">
                                                     <xs:minInclusive value="0"/>
                                                     <xs:maxInclusive value="400"/>
                                                 </xs:restriction>
@@ -74,7 +86,15 @@ and open the template in the editor.
                                     <xs:sequence>
                                         <xs:element name="maxima">
                                             <xs:simpleType>
-                                                <xs:restriction base="xs:int">
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="-100"/>
+                                                    <xs:maxInclusive value="100"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="minima">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
                                                     <xs:minInclusive value="-100"/>
                                                     <xs:maxInclusive value="100"/>
                                                 </xs:restriction>
@@ -84,10 +104,14 @@ and open the template in the editor.
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
+                        <xs:attribute name="fecha">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:date"/>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
-            <xs:attribute name="fecha" type="xs:date"/>
         </xs:complexType>
     </xs:element>
 </xs:schema>
