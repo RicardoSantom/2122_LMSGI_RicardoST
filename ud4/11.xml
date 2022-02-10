@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE receta SYSTEM '11.dtd'>
+<receta 
+    plato="primero">
+    <nombre>Rissotto milanesa</nombre>
+    <descripcion>Arroz caldoso típico de la regióndel Bennetto</descripcion>
+    <tiempo preparacion="20" coccion="20"></tiempo>
+    <ingredientes>
+        <ingrediente>
+            <nombre>arroz</nombre>
+            <cantidad unidad="gramos">500</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombre>cebolla mediana</nombre>
+            <cantidad>1</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombre unidad="pizca">azafrán</nombre>
+            <cantidad>1</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombre>queso parmesano</nombre>
+            <cantidad unidad="gramos">100</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombre>mantequilla</nombre>
+            <cantidad unidad="gramos">100</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombre>sal</nombre>
+        </ingrediente>
+        <ingrediente>
+            <nombre>pimienta</nombre>
+        </ingrediente>
+        <ingrediente>
+            <nombre>caldo</nombre>
+            <cantidad unidad="mililitros">1000</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombre>vino blanco</nombre>
+            <cantidad unidad="chorro">1</cantidad>
+        </ingrediente>
+    </ingredientes>
+    <instrucciones>
+        <paso>Picamos la cebolla y la pochamos con la mitad de la mantequilla.</paso>
+        <paso>Cuando esté transparente, echamos el azafrán, el vino y dejamos que reduzca.</paso>
+        <paso>A continuación , incorporamos el arroz, lo sofreímos un poco.</paso>
+        <paso>Vamos añadiendo el caldo caliente poco a poco mientras removemos.</paso>
+        <paso>Salpimentamos.</paso>
+        <paso>Cuando esté casi hecho, agregamos el resto de la mantequilla y el queso.</paso>
+        <paso>Servimos enseguida.</paso>
+    </instrucciones>
+</receta>

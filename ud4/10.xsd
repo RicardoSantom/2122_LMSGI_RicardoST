@@ -15,6 +15,12 @@ and open the template in the editor.
             <xs:maxInclusive value="100"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="tipoRango">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="-100"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
     <!--Declaración de elementos-->
     <xs:element name="prediccion">
         <xs:complexType>
@@ -84,23 +90,9 @@ and open the template in the editor.
                             <xs:element name="temperatura">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="maxima">
-                                            <xs:simpleType>
-                                                <xs:restriction base="xs:integer">
-                                                    <xs:minInclusive value="-100"/>
-                                                    <xs:maxInclusive value="100"/>
-                                                </xs:restriction>
-                                            </xs:simpleType>
-                                        </xs:element>
-                                        <xs:element name="minima">
-                                            <xs:simpleType>
-                                                <xs:restriction base="xs:integer">
-                                                    <xs:minInclusive value="-100"/>
-                                                    <xs:maxInclusive value="100"/>
-                                                </xs:restriction>
-                                            </xs:simpleType>
-                                        </xs:element>
-                                    </xs:sequence>
+                                        <xs:element name="maxima" type="tipoRango"/>
+                                        <xs:element name="minima" type="tipoRango"/>
+                                   </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
