@@ -5,7 +5,8 @@ XML10.- Se pide almacenar en el documento XML 10.xml los datos relativos a la pr
 a 7 días de un municipio. El formato es el que se detalla a continuación:>
 -->
 <!DOCTYPE prediccion SYSTEM '10.dtd'>
-<prediccion >
+<prediccion xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='10.xsd'>
     <municipio id="A1">
         <nombre>Benavente</nombre>
         <provincia>Zamora</provincia>

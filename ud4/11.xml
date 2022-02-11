@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE receta SYSTEM '11.dtd'>
-<receta 
+<receta xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='11.xsd'
     plato="primero">
     <nombre>Rissotto milanesa</nombre>
     <descripcion>Arroz caldoso típico de la regióndel Bennetto</descripcion>
@@ -15,8 +16,8 @@
             <cantidad>1</cantidad>
         </ingrediente>
         <ingrediente>
-            <nombre unidad="pizca">azafrán</nombre>
-            <cantidad>1</cantidad>
+            <nombre>azafrán</nombre>
+            <cantidad unidad="pizca">1</cantidad>
         </ingrediente>
         <ingrediente>
             <nombre>queso parmesano</nombre>

@@ -8,11 +8,16 @@ and open the template in the editor.
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
-     <!--declaración tipos complejos-->
-     <xs:simpleType name="tipoTiempo">
+    <!--declaración tipos complejos-->
+    <xs:simpleType name="tipoTiempo">
         <xs:restriction base="xs:positiveInteger">
             <xs:minInclusive value="1"/>
             <xs:maxInclusive value="999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoUnidad">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="gramos|pizca|mililitros|cucharada|chorro"/>
         </xs:restriction>
     </xs:simpleType>
     <!--Declaración de elementos-->
@@ -30,19 +35,17 @@ and open the template in the editor.
                 <xs:element name="ingredientes">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="ingrediente">
+                            <xs:element name="ingrediente" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nombre" type="xs:string"/>
-                                        <xs:element name="cantidad"  type="xs:positiveInteger" minOccurs="0">
+                                        <xs:element name="cantidad"  minOccurs="0">
                                             <xs:complexType>
-                                                <xs:attribute name="unidad" use="optional">
-                                                    <xs:simpleType>
-                                                        <xs:restriction base="xs:integer">
-                                                            <xs:pattern value="gramos|pizca|mililitros|cucharada|chorro"/>
-                                                        </xs:restriction>
-                                                    </xs:simpleType>
-                                                </xs:attribute>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:positiveInteger">
+                                                        <xs:attribute name="unidad" use="optional" type="tipoUnidad"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
@@ -59,9 +62,11 @@ and open the template in the editor.
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
-            <xs:attribute name="plato" type="xs:string" use="required">
+            <xs:attribute name="plato" use="required">
                 <xs:simpleType>
-                    <xs:pattern value="primero|segundo|postre"/>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="primero|segundo|postre"/>
+                    </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
         </xs:complexType>
