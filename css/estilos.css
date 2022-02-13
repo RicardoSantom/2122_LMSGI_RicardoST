@@ -5,8 +5,8 @@
 }
 body{
     width:100%;
-    background: rgb(243,244,234);
-    background: radial-gradient(circle, rgba(243,244,234,1) 0%, rgba(174,175,167,1) 100%);
+    /* background: radial-gradient(circle, rgba(243,244,234,1) 0%, rgba(174,175,167,1) 100%);*/
+    background-color: #f4f4f4;
     margin:0 auto;  
     min-width: 475px;
 }
@@ -20,6 +20,7 @@ header{
 .encabezado{
     background-color:#d6675b;
     text-align: center;
+    max-height: 150px;
     height: 100px;
     width: 100%;
 }
@@ -29,6 +30,7 @@ header{
     overflow: hidden;
     margin-top: 1.5em;
     border-radius: 3%;
+    max-height: 1600px;
 }
 .topnav a {
     float: left;
@@ -53,36 +55,54 @@ main{
     height: 750em;
     display: inline-block;
 }
-article{
-    width: 100%;
-    height: 60em;
-}
-#article1{
-    width: 100%;
+#unidad2{
+    width: 98%;
     background-color: #f4f4f4;
-    opacity: 0.6;
     padding-top: 2em;
     padding-bottom: 2em;
-    max-height: 890px;
+    max-height: 4000px;
+    margin: 0 auto;
 }
-#article1 h2,section h3{
-    text-align: center;
+section h3{
     font-size: 30px;
+    text-align: center;
 }
-#article1 h2{
+#unidad2 h2,#unidad3 h2,#unidad4 h2{
     padding-bottom: 1em;
     font-size: 40px;
+    text-align: center;
 }
-#unidad2{
+#section1{
     background-color:#f4f4f4;
+    /*background-image: url(../images/HTML5-CSS3_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;*/
+    width: 100%;
+    position:relative;
+    overflow: hidden;
+}
+#section1 ul {
+    position: relative;
+    z-index: 2;
+}
+/* You could use :after - it doesn't really matter */
+#section1:before {
+    content: ' ';
+    display: inline-grid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
     background-image: url(../images/HTML5-CSS3_1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    width: 100%;
-    opacity: 1;
 }
-ul{
+#section1 ul,#section2 ul,#section3 ul{
     border:1px darkslategrey solid;
     box-shadow: 6px -3px 5px black;
     height: 12em;
@@ -94,113 +114,169 @@ ul{
     font-size: 18px;
     text-align: center;
     display:inline-grid;
+    position:relative;
+    z-index: 2;
 }
-#unidad2:nth-child(1){
+#section1:nth-child(1),#section3:nth-child(1){
     float:left;
 }
-#unidad2:nth-child(n+12){
+#section1:nth-child(n+12),#section3:nth-child(11){
     float:right;
 }
-li{
+#section1 li,#section3 li{
     padding:0.65em;
-    opacity: 1;
 }
-li p{
+#section1 li p,#section3 li p{
     color: black;
 }
-li a{
+#section1 li a,#section3 li a{
     color: #b6675b;
     font-weight: 900;
 }
 #index01:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html01.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index02:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html02.png);
-    
+
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index03:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html03.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index04:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html04.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index05:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html05.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index06:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html06.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index07:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html07.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index08:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html08.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index09:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html09.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index10:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html10.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index11:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html11.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #index12:hover{
-   background-color: #666666;
+    background-color: #666666;
     background-image:url(../images/html12.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #unidad3{
+    background-color:#f4f4f4;
     padding-top: 1em;
     padding-bottom: 1em;
-    width:100%;
+    width:98%;
+    margin:0 auto;
+    background-image: url(../images/rss.jfif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    height: 40em;
+    display: inline-block;
+    backface-visibility: visible;
+}
+#section2:nth-child(1){
+    float:left;
+}
+#section2:nth-child(n+5){
+    float:right;
+}
+#section2 ul{
+    padding:3.5em;
+    margin-left: 3em;
+}
+#section2 li p{
+    color: black;
+}
+#section2 li a{
+    color: #b6675b;
+    font-weight: 900;
+}
+#section3 ul{
+    height: 16em;
+    max-height: 16em;
+}
+article{
+    width: 95%;
+    margin: 0 auto;
+    position:relative;
+    z-index: 2;
+}
+article:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+}   
+article{
+    position: relative;
+    background-color:#f4f4f4;
+    overflow: hidden;
+    margin:0 auto;
+    width: 95%;
 }
 #rssbutton{
     width: 50px;
@@ -214,6 +290,10 @@ footer{
     margin-right: auto;
     text-align: center;
     background-color: grey;
-
+    height: 2em;
 }
-footer p{margin-bottom: 10px;}
+footer address{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.25em;
+}
