@@ -86,7 +86,6 @@ section h3{
     position: relative;
     z-index: 2;
 }
-/* You could use :after - it doesn't really matter */
 #section1:before {
     content: ' ';
     display: inline-grid;
