@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="actividad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="codigo">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[A]{1}[0-9]{2}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="titulo" type="xs:string"/>
+                <xs:element name="fecha_inicio" type="xs:date"/>
+                <xs:element name="sesiones">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="minutos_sesion">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="999"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="sesiones_semana">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="7"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="nivel">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="infantil|adultos"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

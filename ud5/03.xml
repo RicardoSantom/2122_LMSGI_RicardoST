@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE universidad SYSTEM "universitad.dtd">
+<!DOCTYPE universidad SYSTEM "03.dtd">
 <universidad>
 
     <nombre year="1964">Universidad de Victoria</nombre>
-	<fechaconstruccion>14/03/1964</fechaconstruccion>
+    <fechaconstruccion>14/03/1964</fechaconstruccion>
     <pais>España</pais>
 
-<!-- CARRERAS -->
+    <!-- CARRERAS -->
 
     <carreras>
 
@@ -55,7 +55,7 @@
 
     </carreras>
 
-<!-- ASIGNATURAS -->
+    <!-- ASIGNATURAS -->
 
     <asignaturas>
 
@@ -124,7 +124,7 @@
 
     </asignaturas>
 
-<!-- ALUMNOS -->
+    <!-- ALUMNOS -->
 
     <alumnos>
 

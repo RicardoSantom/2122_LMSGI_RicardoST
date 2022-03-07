@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT garaje (coches,reparaciones)>
+<!ATTLIST garaje
+             xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT coches (coche+)>
+<!ELEMENT coche (matricula,propietario,marca,modelo,color,km)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT propietario (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT km (#PCDATA)>
+<!ELEMENT reparaciones (reparacion+)>
+<!ATTLIST reparacion
+            codigo ID #REQUIRED>
+<!ELEMENT reparacion (matricula,descripcion,fecha_entrada,fecha_salida,horas)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fecha_entrada (#PCDATA)>
+<!ELEMENT fecha_salida (#PCDATA)>
+<!ELEMENT horas (#PCDATA)>
+
+

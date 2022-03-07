@@ -1,0 +1,46 @@
+## YAML Template.
+---
+Crea una carpeta con EX02_20210309_TUNOMBREYAPELLIDOS en el que debe contener todos los archivos
+Estructura de directorios
+             /
+            index.html este archivo tiene que tener un índice a todos los archivos creados, además debe aparecer el nombre  y apellidos del alumno.
+            rss.xml
+            mapaestelar.dtd
+            mapaestelar.xml
+            mapaestelar.xsd
+Ejercicio 1.-
+Crea XML, DTD y Schema XML , se desea almacenar información de las constelaciones o estrellas en un mapa estelar.
+
+Elemento constelación
+Cada constelación contiene un atributo nombreLatin que será la clave. Además, se almacenará: nombre español de tipo alfanumérico, superficie un número real, estrellas, objetos, colindantes y observación.
+El elemento estrellas tiene un atributo número de estrellas que almacena un número entero positivo inferior a 1000. El elemento estrella consta de dos elementos: asterismo es un numero entero positivo y un elemento llamado masBrillante donde guarda el nombre de la estrella más brillante y como atributo luminosidad que es un número real mayor que 0.
+El elemento objetos está formado por cúmulos de estrellas, nebulosas, galaxias, cuásares, lluvia de meteoros. Todos los elementos almacenan valores booleanos (true o false) y con valor por defecto false, excepto el elemento lluvias de meteoros, opcional, que almacena su nombre y este elemento se puede repetir tantas veces como lluvias de estrellas se hayan producido en dicha constelación.
+Elemento colidantes, guarda el/los nombre(s) de los objetos colindantes.
+El elemento observación para archivar información en qué hemisferio, mes y hora se ve mejor dicha constelación, está formado por:
+- elemento hemisferio con dos posibles valores Norte o Sur
+- elemento mes con los posibles valores 01 a 12.
+- elemento hora valores 00:00:00 a 23:59:00M siendo HH:MM:SS
+
+Elemento estrella
+Elemento estrella guarda información como nombre de la estrella, a qué constelación pertenece, distancia es un número real mayor que cero, luminosidad número entero positivo, temperatura número real y masa es un número entero positivo. 
+El elemento distancia tiene un atributo para indicar la unidad de medida, con un valor fijo años luz.
+El elemento luminosidad tiene un atributo llamado medida, con un valor fijo soles.
+Elemento temperatura tiene un atributo medida, su valor por defecto K.
+Elemento masa tiene un atributo medida con el valor por defecto soles.
+
+Ejercicio 2.- Se pide crear un archivo RSS para un canal de noticias sobre los  planetas, de la web https://mapaestelar.com
+
+
+Donde se van añadiendo noticias o item  todos los meses el día 5 de cada mes. Actualmente se han añadido tres noticias de los tres primeros planetas (mercurio.html, venus.html y tierra.html). Cada artículo ha sido escrito por autores diferentes: John Paso,  Richard Blu, Mary Patio, respectivamente.
+El título del artículo es el nombre del planeta, y todos deben tener una pequeña descripción del artículo (inventada).
+
+
+Datos de la constelación “La Osa Mayor”, los elementos por cúmulos de estrellas valor false, nebulosas su valor es true, galaxias es true y cuasares con valor false.
+
+Ilustración 1Constelación La Osa Mayor
+Ilustración 2 Datos de la estrella “Alioth”
+Calificación:
+1.- XML 3 puntos
+2.- DTD 1 puntos
+3.- Schema XML 3 puntos constelaciones ; 2 puntos con estrellas.
+4 .- RSS 1 punto

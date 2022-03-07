@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT actividades (actividad+)>
+<!ATTLIST actividades
+             xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT actividad (codigo,titulo,fecha_inicio,sesiones)>
+<!ATTLIST actividad
+            nivel CDATA #REQUIRED>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fecha_inicio (#PCDATA)>
+<!ELEMENT sesiones (minutos_sesion?,sesiones_semana?)>
+<!ATTLIST sesiones
+            intensidad CDATA #REQUIRED>
+<!ELEMENT minutos_sesion (#PCDATA)>
+<!ELEMENT sesiones_semana (#PCDATA)>
