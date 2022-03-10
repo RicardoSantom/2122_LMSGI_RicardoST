@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horario curso="1" grupo="DAW">
+    <columnas>
+        <columna>
+            <cabecera>Horas(2)</cabecera>
+            <cuerpo>
+                <celda>1 De 8:30 Hasta 09:20</celda>
+                <celda>2 De 09:20 Hasta 10:10</celda>
+                <celda>3 De 10:10 Hasta 11:00</celda>
+                <celda>4 De 11:25 Hasta 12:15</celda>
+                <celda>5 DE 12:15 Hasta 13:05</celda>
+                <celda>6 De 13:05 Hasta 13:55</celda>
+            </cuerpo>
+        </columna>
+        <columna>
+            <cabecera>Lunes</cabecera>
+            <cuerpo>
+                <celda abreviaturaProfesor="ARIF">Len Marcas Sist Ges I</celda>
+                <celda abreviaturaProfesor="MGFO">Formacion Orient La</celda>
+                <celda abreviaturaProfesor="VSIF">SINF</celda>
+            </cuerpo>
+        </columna>
+        <columna>
+            <cabecera>Martes</cabecera>
+            <cuerpo>
+                <celda abreviaturaProfesor="JCIF">EDD</celda>
+                <celda abreviaturaProfesor="MELI">BDD</celda>
+                <celda abreviaturaProfesor="AMB">PROG</celda>
+            </cuerpo>
+        </columna>
+        <columna>
+            <cabecera>Miercoles</cabecera>
+            <cuerpo>
+                <celda abreviaturaProfesor="MELI">BDD</celda>
+                <celda abreviaturaProfesor="VSIF">SINF</celda>
+                <celda abreviaturaProfesor="AMB">PROG</celda>
+            </cuerpo>
+        </columna>
+        <columna>
+            <cabecera numero="5">Jueves</cabecera>
+            <cuerpo>
+                <celda abreviaturaProfesor="AMB">PROG</celda>
+                <celda abreviaturaProfesor="ARIF">Len Marcas Sist Ges I</celda>
+                <celda abreviaturaProfesor="VSIF">SINF</celda>
+            </cuerpo>
+        </columna>
+        <columna>
+            <cabecera>Viernes</cabecera>
+            <cuerpo>
+                <celda abreviaturaProfesor="MELI">BDD</celda>
+                <celda abreviaturaProfesor="JCIF">EDD</celda>
+                <celda abreviaturaProfesor="MGFO">Formacion Orient La</celda>
+                <celda abreviaturaProfesor="AMB">PROG</celda>
+            </cuerpo>
+        </columna>
+    </columnas>
+    <profesor tipo="tutor">Javier Coque Garcia</profesor>
+</horario>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horario>
+    <titulo>
+        <titulo1>CICLO FORMATIVO Desarrollo de Aplicaciones Web</titulo1>
+        <titulo2>Curso:1º Grupo:DAW1</titulo2>
+    </titulo>
+    <tabla>
+        <cabecera>
+            <fila class="dias">
+                <celda>Horas(2)</celda>
+                <celda>Lunes<</celda>
+                <celda>Martes</celda>
+                <celda>Miercoles</celda>
+                <celda>Jueves</celda>
+                <celda>Viernes</celda>
+            </fila>
+        </cabecera>
+        <cuerpo>
+            <fila>
+                <celda></celda>
+                <celda></celda>
+                <celda></celda>
+                <celda></celda>
+                <celda></celda>
+                <celda></celda>
+            </fila>
+        </cuerpo>
+    </tabla>
+</horario>
