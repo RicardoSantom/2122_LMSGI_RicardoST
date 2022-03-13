@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-
-<root>
-    
-</root>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Mapa Estelar</title>
+        <link>http://mapaEstelar.com</link>
+        <description>Noticias sobre el firmamento</description>
+        <item>
+            <title>Mercurio</title>
+            <link>http://mercurio.html</link>
+            <description>Noticias de los últimos hallazgos de vida semi-inteligente en
+            mercurio, se ha descubierto a un filósofo.</description>
+            <author>John Paso</author>
+        </item>
+        <item>
+            <title>Venus</title>
+            <link>http://venus.html</link>
+            <description>Últimas noticias desde venus, el monte sigue bien.</description>
+            <author>Richard Blu</author>
+        </item>
+        <item>
+            <title>Tierra</title>
+            <link>http://tierra.html</link>
+            <description>En esta noticia confirmamos que sin los humanos, el resto
+            de seres vivos del planeta tierra, estarían mucho mejor.</description>
+            <author>Mary Patio</author>
+        </item>
+    </channel>
+</rss>

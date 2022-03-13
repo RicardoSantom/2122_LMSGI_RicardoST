@@ -5,10 +5,17 @@
 }
 body{
     width:100%;
-    /* background: radial-gradient(circle, rgba(243,244,234,1) 0%, rgba(174,175,167,1) 100%);*/
-    background-color: #f4f4f4;
+    /*background: radial-gradient(circle, rgba(243,244,234,1) 0%, rgba(174,175,167,1) 100%);*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 160em;
     margin:0 auto;  
     min-width: 475px;
+    position:absolute;
+    z-index: 1;
+    /*background-color: #f4f4f4;*/
+    background-image: url('../images/cobre_oxidado.jpg');
+    justify-content:center
 }
 header{
     font-size: 3.25em;
@@ -53,10 +60,11 @@ main{
     width: 100%;
     font-family: 'Goldman-Regular-ttf';
     height: 750em;
-    display: inline-block;
+    display: contents;
+    margin: 0 auto;
 }
 #unidad2{
-    width: 98%;
+    width: 100%;
     background-color: #f4f4f4;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -72,21 +80,17 @@ section h3{
     font-size: 40px;
     text-align: center;
 }
-#section1{
+#unidad2{
     background-color:#f4f4f4;
-    /*background-image: url(../images/HTML5-CSS3_1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;*/
     width: 100%;
     position:relative;
     overflow: hidden;
 }
-#section1 ul {
+#unidad2 ul {
     position: relative;
     z-index: 2;
 }
-#section1:before {
+#unidad2:before {
     content: ' ';
     display: inline-grid;
     position: absolute;
@@ -100,6 +104,10 @@ section h3{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+}
+#section1,#section3{
+    width: 60%;
+    margin: 0 auto;
 }
 #section1 ul,#section2 ul,#section3 ul{
     border:1px darkslategrey solid;
@@ -122,13 +130,13 @@ section h3{
 #section1:nth-child(n+12),#section3:nth-child(11){
     float:right;
 }
-#section1 li,#section3 li{
+#section1 li,#section2 li,#section3 li{
     padding:0.65em;
 }
-#section1 li p,#section3 li p{
+#section1 li p,#section2 li p,#section3 li p{
     color: black;
 }
-#section1 li a,#section3 li a{
+#section1 li a,#section2 li a,#section3 li a{
     color: #b6675b;
     font-weight: 900;
 }
@@ -218,19 +226,41 @@ section h3{
     background-position: center center;
 }
 #unidad3{
-    background-color:#f4f4f4;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 1em;
     width:98%;
     margin:0 auto;
-    background-image: url(../images/rss.jfif);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+    max-height: 50em;
+    display: inline-grid;
+    position:relative;
+    justify-content:center
+}
+#unidad4{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color:#f4f4f4;
     width: 100%;
-    height: 40em;
-    display: inline-block;
-    backface-visibility: visible;
+    position:relative;
+    overflow: hidden;
+}
+#unidad4 ul {
+    position: relative;
+    z-index: 2;
+}
+#unidad4:before {
+    content: ' ';
+    display: inline-grid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url(../images/xml_filetype_icon.png);
+    background-repeat: no-repeat;
+    background-size: 40% 70%;
+    background-position: center center;
 }
 #section2:nth-child(1){
     float:left;
@@ -252,7 +282,7 @@ section h3{
 #section3 ul{
     height: 16em;
     max-height: 16em;
-}
+}/*
 article{
     width: 95%;
     margin: 0 auto;
@@ -276,7 +306,7 @@ article{
     overflow: hidden;
     margin:0 auto;
     width: 95%;
-}
+}*/
 #rssbutton{
     width: 50px;
 }
@@ -290,6 +320,7 @@ footer{
     text-align: center;
     background-color: grey;
     height: 2em;
+    z-index: 2;
 }
 footer address{
     padding-top: 0.5em;

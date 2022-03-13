@@ -1,12 +1,140 @@
 <?xml version="1.0"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
-
+    <xs:simpleType name="tipoLuminosidad">
+        <xs:restriction base="xs:positiveInteger"/>
+    </xs:simpleType>
+    <xs:simpleType name="tipoMedida">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="mapaEstelar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="constelacion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="superficie" type="xs:decimal"/>
+                            <xs:element name="estrellas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="asterismo" type="xs:positiveInteger"/>
+                                        <xs:element name="masBrillante">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="luminosidad" type="tipoLuminosidad"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="numeroEstrellas">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:positiveInteger">
+                                                <xs:maxExclusive value="1000"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="objetos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="cumulos" type="xs:boolean" default="false"/>
+                                        <xs:element name="nebulosas" type="xs:boolean" default="false"/>
+                                        <xs:element name="galaxias" type="xs:boolean" default="false"/>
+                                        <xs:element name="cuasares" type="xs:boolean" default="false"/>
+                                        <xs:element name="lluviaMeteoros">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="colindantes" type="xs:string" maxOccurs="unbounded"/>
+                            <xs:element name="observacion">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="hemisferio">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="Norte|Sur"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="mes" type="xs:gMonth"/>
+                                        <xs:element name="hora">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:time">
+                                                    <xs:minInclusive value="00:00:00"/>
+                                                    <xs:maxInclusive value="23:59:59"/>
+                                                    <xs:whiteSpace value="collapse"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="nombreLatin">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:whiteSpace value="preserve"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="estrella">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="constelacion" type="xs:string"/>
+                            <xs:element name="distancia">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:int">
+                                            <xs:attribute name="medida" type="tipoMedida" fixed="anyosLuz"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="luminosidad">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:int">
+                                         <xs:attribute name="medida" type="tipoMedida" default="soles"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="temperatura">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:int">
+                                         <xs:attribute name="medida" type="tipoMedida" default="K"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="masa">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:int">
+                                        <xs:attribute name="medida" type="tipoMedida" default="soles"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>

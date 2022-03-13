@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-<!--
-    TODO define vocabulary identification data
-    PUBLIC ID  : -//vendor//vocabulary//EN
-    SYSTEM ID  : http://server/path/__NAME__
--->
-
-<!-- TODO define your own vocabulary/syntax. Example follows:  -->
-<!ELEMENT __ROOT__ ANY>
-<!ATTLIST __ROOT__ version CDATA #REQUIRED>
-
+<!ELEMENT mapaEstelar (constelacion,estrella)>
+<!ATTLIST mapaEstelar xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT constelacion (#PCDATA|nombre|superficie|estrellas|objetos|colindantes|observacion)*>
+<!ATTLIST constelacion
+            nombreLatin CDATA #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT superficie (#PCDATA)>
+<!ELEMENT estrellas (asterismo,masBrillante)>
+<!ATTLIST estrellas 
+            numeroEstrellas CDATA #REQUIRED>
+<!ELEMENT asterismo (#PCDATA)>
+<!ELEMENT masBrillante (#PCDATA)>
+<!ATTLIST masBrillante
+            luminosidad CDATA #REQUIRED>
+<!ELEMENT objetos (cumulos,nebulosas,galaxias,cuasares,lluviaMeteoros?)>
+<!ELEMENT cumulos (#PCDATA)>
+<!ELEMENT nebulosas (#PCDATA)>
+<!ELEMENT galaxias (#PCDATA)>
+<!ELEMENT cuasares (#PCDATA)>
+<!ELEMENT lluviaMeteoros (nombre+)>
+<!ELEMENT colindantes (#PCDATA)>
+<!ELEMENT observacion (hemisferio,mes,hora)>
+<!ELEMENT hemisferio (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT estrella (nombre,constelacion,distancia,luminosidad,temperatura,masa)>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia
+            medida CDATA #FIXED 'anyosLuz'>
+<!ELEMENT luminosidad (#PCDATA)>
+<!ATTLIST luminosidad
+            medida CDATA  'soles'>
+<!ELEMENT temperatura (#PCDATA)>
+<!ATTLIST temperatura
+            medida CDATA 'K'>
+<!ELEMENT masa (#PCDATA)>
+<!ATTLIST masa
+            medida CDATA 'soles'>
