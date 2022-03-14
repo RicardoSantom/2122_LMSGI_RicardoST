@@ -1,86 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE horarios SYSTEM "horario.dtd">
 <horarios>
-    <titulo> Curso:1 Grupo:DAW1</titulo>
+    <grupo idGrupo="DAW1" codT="JCIF">
+        <hora entrada="08:30:00" salida="09:20:00">
+            <dia_sem dia="lunes" num="2">LMSGI</dia_sem>
+            <dia_sem dia="martes" num="2">EDD</dia_sem>
+            <dia_sem dia="miercoles" num="2">BDD</dia_sem>
+            <dia_sem dia="jueves" num="2">PROG</dia_sem>
+            <dia_sem dia="viernes" num="2">BDD</dia_sem>
+        </hora>
+        <hora entrada="09:20:00" salida="10:10:00"/>
+        <hora entrada="10:10:00" salida="11:00:00">
+            <dia_sem dia="lunes" num="2">FOL</dia_sem>
+            <dia_sem dia="martes" num="2">BDD</dia_sem>
+            <dia_sem dia="miercoles" num="2">SINF</dia_sem>
+            <dia_sem dia="jueves" num="2">LMSGI</dia_sem>
+            <dia_sem dia="viernes" num="1">EDD</dia_sem>
+        </hora>
+        <hora entrada="11:25:00" salida="12:15:00">
+            <dia_sem dia="viernes" num="1">FOL</dia_sem>
+        </hora>
+        <hora entrada="12:15:00" salida="13:05:00">
+            <dia_sem dia="lunes" num="2">SINF</dia_sem>
+            <dia_sem dia="martes" num="2">PROG</dia_sem>
+            <dia_sem dia="miercoles" num="2">PROG</dia_sem>
+            <dia_sem dia="jueves" num="2">SINF</dia_sem>
+            <dia_sem dia="viernes" num="2">PROG</dia_sem>
+        </hora>
+        <hora entrada="13:05:00" salida="13:55:00"/>
+    </grupo>
     <asignaturas>
-        <asignatura codAsignatura="A1">
-            <nombre>Lenguaje Marcas Sistemas Gestión Información</nombre>
-            <acronimo>LMSGI</acronimo>
-            <profesor>Amor Rodríguez Navarro</profesor>
-            <abreviatura>ARIF</abreviatura>
-        </asignatura>
-        <asignatura codAsignatura="A2">
-            <nombre>Formación Orient Laboral</nombre>
-            <acronimo>FOL</acronimo>
-            <profesor>María Enriqueta González Carnero</profesor>
-            <abreviatura>MGFO</abreviatura>
-        </asignatura>
-        <asignatura codAsignatura="A3">
-            <nombre>Sistemas Informáticos</nombre>
-            <acronimo>SINF</acronimo>
-            <profesor>Valter Jorge Da Sousa Raposo</profesor>
-            <abreviatura>VSIF</abreviatura>
-        </asignatura>
-        <asignatura codAsignatura="A4">
-            <nombre>Entornos de Desarrollo</nombre>
-            <acronimo>EDD</acronimo>
-            <profesor>Javier Coque Garcia</profesor>
-            <abreviatura>JCIF</abreviatura>
-        </asignatura>
-        <asignatura codAsignatura="A5">
-            <nombre>Bases de Datos</nombre>
-            <acronimo>BDD</acronimo>
-            <profesor>Hermelinda Ramos Osorio</profesor>
-            <abreviatura>MELI</abreviatura>
-        </asignatura>
-        <asignatura codAsignatura="A6">
-            <nombre>Programación</nombre>
-            <acronimo>PROG</acronimo>
-            <profesor>Ambrosio Casado Fernández</profesor>
-            <abreviatura>AMB</abreviatura>
-        </asignatura>
+        <asignatura codAsignatura="LMSGI" codProfesor="ARIF MELI">Lenguaje Marcas Sistemas Gestión Información</asignatura>
+        <asignatura codAsignatura="FOL" codProfesor="MGFO">Formación Orient Laboral</asignatura>
+        <asignatura codAsignatura="SINF" codProfesor="VSIF">Sistemas Informáticos</asignatura>
+        <asignatura codAsignatura="EDD" codProfesor="JCIF">Entornos de Desarrollo</asignatura>
+        <asignatura codAsignatura="BDD" codProfesor="MELI">Bases de Datos</asignatura>
+        <asignatura codAsignatura="PROG" codProfesor="AMB">Programación</asignatura>
     </asignaturas>
-    <profesor tipo="tutor">Javier Coque Garcia</profesor>
-    <dias>
-        <lunes>
-            <hora cod="A1">1 De 08:30 Hasta 09:20</hora>
-            <hora cod="A1">2 De 09:20 Hasta 10:10</hora>
-            <hora cod="A2">3 De 10:10 Hasta 11:00</hora>
-            <hora cod="A2">4 de 11:25 Hasta 12:15</hora>
-            <hora cod="A3">5 De 12:15 Hasta 13:05</hora>
-            <hora cod="A3">6 De 13:05 Hasta 13:55</hora>
-        </lunes>
-        <martes>
-            <hora cod="A4">1 De 08:30 Hasta 09:20</hora>
-            <hora cod="A4">2 De 09:20 Hasta 10:10</hora>
-            <hora cod="A5">3 De 10:10 Hasta 11:00</hora>
-            <hora cod="A5">4 de 11:25 Hasta 12:15</hora>
-            <hora cod="A6">5 De 12:15 Hasta 13:05</hora>
-            <hora cod="A6">6 De 13:05 Hasta 13:55</hora>
-        </martes>
-        <miercoles>
-            <hora cod="A5">1 De 08:30 Hasta 09:20</hora>
-            <hora cod="A5">2 De 09:20 Hasta 10:10</hora>
-            <hora cod="A3">3 De 10:10 Hasta 11:00</hora>
-            <hora cod="A3">4 de 11:25 Hasta 12:15</hora>
-            <hora cod="A6">5 De 12:15 Hasta 13:05</hora>
-            <hora cod="A6">6 De 13:05 Hasta 13:55</hora>
-        </miercoles>
-        <jueves>
-            <hora cod="A6">1 De 08:30 Hasta 09:20</hora>
-            <hora cod="A6">2 De 09:20 Hasta 10:10</hora>
-            <hora cod="A1">3 De 10:10 Hasta 11:00</hora>
-            <hora cod="A1">4 de 11:25 Hasta 12:15</hora>
-            <hora cod="A3">5 De 12:15 Hasta 13:05</hora>
-            <hora cod="A3">6 De 13:05 Hasta 13:55</hora>
-        </jueves>
-        <viernes>
-            <hora cod="A5">1 De 08:30 Hasta 09:20</hora>
-            <hora cod="A5">2 De 09:20 Hasta 10:10</hora>
-            <hora cod="A4">3 De 10:10 Hasta 11:00</hora>
-            <hora cod="A2">4 de 11:25 Hasta 12:15</hora>
-            <hora cod="A6">5 De 12:15 Hasta 13:05</hora>
-            <hora cod="A6">6 De 13:05 Hasta 13:55</hora>
-        </viernes>
-    </dias>
+    <profesores>
+        <profesor codigo="ARIF">Amor Rodríguez Navarro</profesor>
+        <profesor codigo="MGFO">María Enriqueta González Carnero</profesor>
+        <profesor codigo="VSIF">Valter Jorge Da Sousa Raposo</profesor>
+        <profesor codigo="JCIF">Javier Coque Garcia</profesor>
+        <profesor codigo="MELI">Hermelinda Ramos Osorio</profesor>
+        <profesor codigo="AMB">Ambrosio Casado Fernández</profesor>
+    </profesores>
 </horarios>

@@ -1,26 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
-
-<!ELEMENT horarios (titulo,asignaturas,profesor,dias)>
-<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT horarios (grupo+,asignaturas+,profesores+)>
+<!ELEMENT grupo (hora+)>
+<!ATTLIST grupo
+    idGrupo ID #REQUIRED
+    codT IDREF #REQUIRED
+  >
+<!ELEMENT hora (dia_sem)*>
+<!ATTLIST hora
+    entrada CDATA #REQUIRED
+    salida CDATA #REQUIRED
+  >
+<!ELEMENT dia_sem (#PCDATA)>
+<!ATTLIST dia_sem
+    dia CDATA #REQUIRED
+    num CDATA #REQUIRED
+  >
 <!ELEMENT asignaturas (asignatura+)>
-<!ELEMENT asignatura (nombre,acronimo,profesor,abreviatura)>
+<!ELEMENT asignatura (#PCDATA)>
 <!ATTLIST asignatura
     codAsignatura ID #REQUIRED
+    codProfesor IDREFS #REQUIRED
   >
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT acronimo (#PCDATA)>
+<!ELEMENT profesores (profesor+)>
 <!ELEMENT profesor (#PCDATA)>
 <!ATTLIST profesor
-    tipo CDATA #IMPLIED
->
-<!ELEMENT abreviatura (#PCDATA)>
-<!ELEMENT dias (lunes,martes,miercoles,jueves,viernes)>
-<!ELEMENT lunes (hora+)>
-<!ELEMENT hora (#PCDATA)>
-<!ATTLIST hora
-    cod IDREF #REQUIRED
+    codigo ID #REQUIRED
   >
-<!ELEMENT martes (hora+)>
-<!ELEMENT miercoles (hora+)>
-<!ELEMENT jueves (hora+)>
-<!ELEMENT viernes (hora+)>
