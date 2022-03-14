@@ -1,142 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE horarios SYSTEM "horario.dtd">
 <horarios>
-    <titulo>CICLO FORMATIVO Desarrollo de Aplicaciones Web</titulo>
-    <horario>
-        <identificador>Curso:1º Grupo:DAW1</identificador>
-        <dias>
-            <dia nombre="Lunes">
-                <asignatura>
-                    <nombre>Len Marcas Sist Ges I</nombre>
-                    <profesor>ARIF</profesor>
-                    <horas>
-                        <hora>1 De 08:30 Hasta 09:20</hora>
-                        <hora>2 De 09:20 Hasta 10:10</hora>
-                    </horas>
-                </asignatura>
-                <asignatura>
-                    <hora>3 De 10:10 Hasta 11:00</hora>
-                    <hora>4 de 11:25 Hasta 12:15</hora>
-                    <nombre>Formación Orient La</nombre>
-                    <profesor>MGFO</profesor>
-                </asignatura>
-                <asignatura>
-                    <hora>5 De 12:15 Hasta 13:05</hora>
-                    <hora>6 De 13:05 Hasta 13:55</hora>
-                    <nombre>SINF</nombre>
-                    <profesor>VSIF</profesor>
-                </asignatura>
-            </dia>
-            <dia nombre="Martes">
-                <bloqueHorario>
-                    <hora>1 De 08:30 Hasta 09:20</hora>
-                    <hora>2 De 09:20 Hasta 10:10</hora>
-                    <asignatura>
-                        <nombre>EDD</nombre>
-                        <profesor>JCIF</profesor>
-                    </asignatura>
-                </bloqueHorario>
-                <asignatura>
-                    <hora>3 De 10:10 Hasta 11:00</hora>
-                    <hora>4 de 11:25 Hasta 12:15</hora>
-                    <nombre>BDD</nombre>
-                    <profesor>MELI</profesor>
-                </asignatura>
-                <asignatura>
-                    <hora>5 De 12:15 Hasta 13:05</hora>
-                    <hora>6 De 13:05 Hasta 13:55</hora>
-                    <nombre>PROG</nombre>
-                    <profesor>AMB</profesor>
-                </asignatura>
-            </dia>
-            <dia nombre="Miercoles">
-                <asignatura>
-                    <hora>1 De 08:30 Hasta 09:20</hora>
-                    <hora>2 De 09:20 Hasta 10:10</hora>
-                    <nombre>BDD/nombre</nombre>
-                    <profesor>MELI</profesor>
-                </asignatura>
-                <asignatura>
-                    <hora>3 De 10:10 Hasta 11:00</hora>
-                    <hora>4 de 11:25 Hasta 12:15</hora>
-                    <nombre>MELI</nombre>
-                    <profesor>VSIF</profesor>
-                </asignatura>
-                <asignatura>
-                    <hora>5 De 12:15 Hasta 13:05</hora>
-                    <hora>6 De 13:05 Hasta 13:55</hora>
-                    <nombre>PROG</nombre>
-                    <profesor>AMB</profesor>
-                </asignatura>
-            </dia>
-            <dia nombre="Jueves">
-                <asignatura>
-                    <hora>1 De 08:30 Hasta 09:20</hora>
-                    <hora>2 De 09:20 Hasta 10:10</hora>
-                    <nombre>PROG</nombre>
-                    <profesor>AMB</profesor>
-                </asignatura>
-                <asignatura>
-                    <hora>3 De 10:10 Hasta 11:00</hora>
-                    <hora>4 de 11:25 Hasta 12:15</hora>
-                    <nombre>Len Marcas Sist Ges I</nombre>
-                    <profesor>ARIF</profesor>
-                </asignatura>
-                <asignatura>
-                    <hora>5 De 12:15 Hasta 13:05</hora>
-                    <hora>6 De 13:05 Hasta 13:55</hora>
-                    <nombre>SINF</nombre>
-                    <profesor>VSIF</profesor>
-                </asignatura>
-            </dia>
-            <dia nombre="Viernes">
-                <asignatura>
-                    <hora>1 De 08:30 Hasta 09:20</hora>
-                    <hora>2 De 09:20 Hasta 10:10</hora>
-                    <nombre>BDD</nombre>
-                    <profesor>MELI</profesor>
-                </asignatura>
-                <asignatura>
-                    <hora>3 De 10:10 Hasta 11:00</hora>
-                    <nombre>EDD</nombre>
-                    <profesor>JCIF</profesor>
-                </asignatura>
-                <asignatura>
-                    <hora>4 de 11:25 Hasta 12:15</hora>
-                    <nombre>Formación Orient La</nombre>
-                    <profesor>MGFO</profesor>
-                </asignatura>
-                <asignatura>
-                    <hora>5 De 12:15 Hasta 13:05</hora>
-                    <hora>6 De 13:05 Hasta 13:55</hora>
-                    <nombre>PROG</nombre>
-                    <profesor>AMB</profesor>
-                </asignatura>
-            </dia>
-        </dias>
-        <profesor>Javier Coque García</profesor>
-    </horario>
-    <horario>
-        <identificador>Lenguaje de marcas y sistemas de gestión de la información</identificador>
-        <dias>
-            <dia nombre="Lunes">
-                <asignatura>
-                    <hora>1 De 08:30 Hasta 09:20</hora>
-                    <hora>2 De 09:20 Hasta 10:10</hora>
-                    <nombre>Len Marcas Sist Ges I</nombre>
-                    <profesor>ARIF</profesor>
-                </asignatura>
-            </dia>
-            <dia nombre="Jueves">
-                <asignatura>
-                    <nombre>Len Marcas Sist Ges I</nombre>
-                    <profesor>ARIF</profesor>
-                </asignatura>
-                <horas>
-                    <hora>3 De 10:10 Hasta 11:00</hora>
-                    <hora>4 de 11:25 Hasta 12:15</hora>
-                </horas>
-            </dia>
-        </dias>
-        <profesor>Amor Rodríguez Navarro</profesor>
-    </horario>
+    <titulo> Curso:1 Grupo:DAW1</titulo>
+    <asignaturas>
+        <asignatura codAsignatura="A1">
+            <nombre>Lenguaje Marcas Sistemas Gestión Información</nombre>
+            <acronimo>LMSGI</acronimo>
+            <profesor>Amor Rodríguez Navarro</profesor>
+            <abreviatura>ARIF</abreviatura>
+        </asignatura>
+        <asignatura codAsignatura="A2">
+            <nombre>Formación Orient Laboral</nombre>
+            <acronimo>FOL</acronimo>
+            <profesor>María Enriqueta González Carnero</profesor>
+            <abreviatura>MGFO</abreviatura>
+        </asignatura>
+        <asignatura codAsignatura="A3">
+            <nombre>Sistemas Informáticos</nombre>
+            <acronimo>SINF</acronimo>
+            <profesor>Valter Jorge Da Sousa Raposo</profesor>
+            <abreviatura>VSIF</abreviatura>
+        </asignatura>
+        <asignatura codAsignatura="A4">
+            <nombre>Entornos de Desarrollo</nombre>
+            <acronimo>EDD</acronimo>
+            <profesor>Javier Coque Garcia</profesor>
+            <abreviatura>JCIF</abreviatura>
+        </asignatura>
+        <asignatura codAsignatura="A5">
+            <nombre>Bases de Datos</nombre>
+            <acronimo>BDD</acronimo>
+            <profesor>Hermelinda Ramos Osorio</profesor>
+            <abreviatura>MELI</abreviatura>
+        </asignatura>
+        <asignatura codAsignatura="A6">
+            <nombre>Programación</nombre>
+            <acronimo>PROG</acronimo>
+            <profesor>Ambrosio Casado Fernández</profesor>
+            <abreviatura>AMB</abreviatura>
+        </asignatura>
+    </asignaturas>
+    <profesor tipo="tutor">Javier Coque Garcia</profesor>
+    <dias>
+        <lunes>
+            <hora cod="A1">1 De 08:30 Hasta 09:20</hora>
+            <hora cod="A1">2 De 09:20 Hasta 10:10</hora>
+            <hora cod="A2">3 De 10:10 Hasta 11:00</hora>
+            <hora cod="A2">4 de 11:25 Hasta 12:15</hora>
+            <hora cod="A3">5 De 12:15 Hasta 13:05</hora>
+            <hora cod="A3">6 De 13:05 Hasta 13:55</hora>
+        </lunes>
+        <martes>
+            <hora cod="A4">1 De 08:30 Hasta 09:20</hora>
+            <hora cod="A4">2 De 09:20 Hasta 10:10</hora>
+            <hora cod="A5">3 De 10:10 Hasta 11:00</hora>
+            <hora cod="A5">4 de 11:25 Hasta 12:15</hora>
+            <hora cod="A6">5 De 12:15 Hasta 13:05</hora>
+            <hora cod="A6">6 De 13:05 Hasta 13:55</hora>
+        </martes>
+        <miercoles>
+            <hora cod="A5">1 De 08:30 Hasta 09:20</hora>
+            <hora cod="A5">2 De 09:20 Hasta 10:10</hora>
+            <hora cod="A3">3 De 10:10 Hasta 11:00</hora>
+            <hora cod="A3">4 de 11:25 Hasta 12:15</hora>
+            <hora cod="A6">5 De 12:15 Hasta 13:05</hora>
+            <hora cod="A6">6 De 13:05 Hasta 13:55</hora>
+        </miercoles>
+        <jueves>
+            <hora cod="A6">1 De 08:30 Hasta 09:20</hora>
+            <hora cod="A6">2 De 09:20 Hasta 10:10</hora>
+            <hora cod="A1">3 De 10:10 Hasta 11:00</hora>
+            <hora cod="A1">4 de 11:25 Hasta 12:15</hora>
+            <hora cod="A3">5 De 12:15 Hasta 13:05</hora>
+            <hora cod="A3">6 De 13:05 Hasta 13:55</hora>
+        </jueves>
+        <viernes>
+            <hora cod="A5">1 De 08:30 Hasta 09:20</hora>
+            <hora cod="A5">2 De 09:20 Hasta 10:10</hora>
+            <hora cod="A4">3 De 10:10 Hasta 11:00</hora>
+            <hora cod="A2">4 de 11:25 Hasta 12:15</hora>
+            <hora cod="A6">5 De 12:15 Hasta 13:05</hora>
+            <hora cod="A6">6 De 13:05 Hasta 13:55</hora>
+        </viernes>
+    </dias>
 </horarios>
