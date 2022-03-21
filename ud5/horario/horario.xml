@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE horarios SYSTEM "horario.dtd">
-<horarios>
+<horarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="horario.xsd">
     <grupo idGrupo="DAW1" codT="JCIF">
         <hora entrada="08:30:00" salida="09:20:00">
             <dia_sem dia="lunes" num="2">LMSGI</dia_sem>
