@@ -324,6 +324,28 @@ article{
 #rssbutton{
     width: 50px;
 }
+.github{
+   padding-bottom: 10px;
+    padding-left: 6em;
+}
+.github:before{
+    font-family: logo_github_icon;
+    content:'\f09b';
+    background-color:#66ffff;
+    color:white;
+    font-size: 3em;
+    border-radius: 25px;
+    background-position: bottom;
+}
+.iconogit{
+    background-image: url(../fonts/fontawesome/webfonts/logo_github_icon_143196.ico);
+    background-repeat: no-repeat;
+    height: 6em;
+    position:static;
+    bottom:90px;
+}.iconogit a{
+    position: inherit;
+}
 footer{
     position:fixed;
     bottom: 0;

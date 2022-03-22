@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!ELEMENT horarios (grupo+,asignaturas+,profesores+)>
-<!ELEMENT grupo (hora+)>
+<!ATTLIST horarios
+             xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT grupo (hora)+>
 <!ATTLIST grupo
     idGrupo ID #REQUIRED
     codT IDREF #REQUIRED

@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!ELEMENT universidad (nombre,fechaconstruccion,pais,carreras,asignaturas,alumnos)>
+<!ATTLIST universidad
+             xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
 <!ELEMENT nombre (#PCDATA)>
 <!ATTLIST nombre
     year CDATA #IMPLIED

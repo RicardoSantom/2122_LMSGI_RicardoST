@@ -69,9 +69,17 @@
 }
 @font-face{
     font-familly : 'Starjedi';
-    src: url('../fons/Starjedi.ttf');
+    src: url(../fonts/Starjedi.ttf);
 }
 @font-face{
     font-familly : 'Starjhol';
-    src: url('../fons/Starjhol.ttf');
+    src: url(../fonts/Starjhol.ttf);
+}
+@font-face{
+    font-familly : 'logo_github_icon';
+    src: url(../fonts/fontawesome/webfonts/logo_github_icon_143196.ico);
+}
+@font-face{
+    font-familly : 'git-repository';
+    src: url(../fonts/fontawesome/webfonts/git-repository-fill.svg);
 }
