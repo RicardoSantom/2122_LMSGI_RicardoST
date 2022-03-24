@@ -1,0 +1,26 @@
+<!ELEMENT tabla_periodica (atomo+)>
+<!ATTLIST tabla_periodica
+             xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT atomo (nombre,simbolo,numero_atomico,valencias?,peso_atomico,punto_ebu?,punto_fus?,densidad?)>
+<!ATTLIST atomo
+    periodo CDATA #REQUIRED
+    grupo CDATA #REQUIRED
+    bloque (s|p|d|f) #REQUIRED
+  >
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT simbolo (#PCDATA)>
+<!ELEMENT numero_atomico (#PCDATA)>
+<!ELEMENT valencias (valencia+)>
+<!ELEMENT valencia (#PCDATA)>
+<!ELEMENT peso_atomico (#PCDATA)>
+<!ELEMENT punto_ebu (#PCDATA)>
+<!ATTLIST punto_ebu
+    unidades (C|K) #REQUIRED>
+<!ELEMENT punto_fus (#PCDATA)>
+<!ATTLIST punto_fus
+    unidades (C|K) #REQUIRED>
+<!ELEMENT densidad EMPTY>
+<!ATTLIST densidad
+    valor CDATA #REQUIRED
+  >

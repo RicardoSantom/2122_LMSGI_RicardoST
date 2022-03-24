@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:annotation>
+        <xs:appinfo>tabla.xsd EX02_20220324_RicardoSantiagoTome</xs:appinfo>
+        <xs:documentation xml:lang="es">
+            Este esquema valida un XML de una tabla periódica de elementos
+        </xs:documentation>
+        <xs:documentation xml:lang="en">
+            this schema validates an XML from a periodic table elements
+        </xs:documentation>
+    </xs:annotation>
+    <xs:element name="tabla_eriodica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="atomo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="simbolo" type="xs:string"/>
+                            <xs:element name="numero_atomico">
+                                <xs:simpleType>
+                                        <xs:restriction base="xs:positiveInteger">
+                                            <xs:minInclusive value="1"/>
+                                            <xs:maxInclusive value="118"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="valencias">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="valencia" minOccurs="1" maxOccurs="6">
+                                            <xs:simpleType>
+                                                    <xs:restriction base="xs:integer">
+                                                        <xs:minInclusive value="-3"/>
+                                                        <xs:maxInclusive value="8"/>
+                                                    </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="peso_atomico" type="xs:decimal"/>
+                            <xs:element name="punto_ebu" type="xs:decimal"/>
+                            <xs:element name="punto_fus" type="xs:decimal"/>
+                            <xs:element name="densidad" type="xs:decimal"/>
+                        </xs:sequence>
+                        <xs:attribute name="periodo">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:positiveInteger">
+                                    <xs:minInclusive value="1"/>
+                                    <xs:maxInclusive value="7"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="grupo">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:positiveInteger">
+                                    <xs:minInclusive value="1"/>
+                                    <xs:maxInclusive value="18"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="bloque" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
