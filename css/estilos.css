@@ -367,3 +367,16 @@ footer address{
     position: fixed;
     bottom: 3em;
 }
+#enlace2{
+    color:red;
+    background-color: black;
+}
+#enlace2:before{
+    font-family: FontAwesome;
+    content:'\f09b';
+    background-color:#EC7063;
+    color:white;
+    font-size: 30px;
+    border-radius: 25px;
+    background-position: left;
+}
