@@ -325,7 +325,7 @@ article{
     width: 50px;
 }
 .github{
-   padding-bottom: 10px;
+    padding-bottom: 10px;
     padding-left: 6em;
 }
 .github:before{
@@ -363,20 +363,15 @@ footer address{
     padding-bottom: 0.5em;
     font-size: 1.25em;
 }
-#css{
-    position: fixed;
-    bottom: 3em;
-}
 #enlace2{
     color:red;
     background-color: black;
 }
-#enlace2:before{
-    font-family: FontAwesome;
-    content:'\f09b';
-    background-color:#EC7063;
-    color:white;
-    font-size: 30px;
-    border-radius: 25px;
-    background-position: left;
+.enlace2{
+    height: 30px;
+    position: fixed;
+    bottom: 3em;
+    text-align: center;
+    justify-content:center;
+    margin-left: 6em;
 }
