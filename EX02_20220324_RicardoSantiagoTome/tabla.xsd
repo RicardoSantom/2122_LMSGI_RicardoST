@@ -11,10 +11,13 @@
             this schema validates an XML from a periodic table elements
         </xs:documentation>
     </xs:annotation>
-    <xs:element name="tabla_eriodica">
+    <!--<xs:simpleType name="tipoPunto">
+        <xs:restriction base="xs:decimal
+    </xs:simpleType>-->
+    <xs:element name="tabla_periodica">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="atomo">
+                <xs:element name="atomo" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="nombre" type="xs:string"/>
@@ -27,7 +30,7 @@
                                         </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="valencias">
+                            <xs:element name="valencias" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="valencia" minOccurs="1" maxOccurs="6">
@@ -42,9 +45,45 @@
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="peso_atomico" type="xs:decimal"/>
-                            <xs:element name="punto_ebu" type="xs:decimal"/>
-                            <xs:element name="punto_fus" type="xs:decimal"/>
-                            <xs:element name="densidad" type="xs:decimal"/>
+                            <xs:element name="punto_ebu" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:float">
+                                            <xs:attribute name="unidades">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:pattern value="[KC]"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="punto_fus" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:float">
+                                            <xs:attribute name="unidades">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:pattern value="[KC]"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="densidad" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:attribute name="valor">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:decimal"/>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                         <xs:attribute name="periodo">
                             <xs:simpleType>
