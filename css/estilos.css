@@ -102,7 +102,7 @@ section h3{
     opacity: 0.6;
     background-image: url(../images/HTML5-CSS3_1.png);
     background-repeat: no-repeat;
-    background-size: 70% 70%;
+    background-size: 60% 60%;
     background-position: center center;
 }
 #section1,#section3,#section5,#section6{
@@ -230,7 +230,7 @@ section h3{
     padding-bottom: 1em;
     width:98%;
     margin:0 auto;
-    max-height: 50em;
+    max-height: 70em;
     display: inline-grid;
     position:relative;
     justify-content:center
@@ -259,7 +259,7 @@ section h3{
     opacity: 0.6;
     background-image: url(../images/xml_filetype_icon.png);
     background-repeat: no-repeat;
-    background-size: 60% 50%;
+    background-size: 50% 40%;
     background-position: center center;
 }
 #section2:nth-child(1){
