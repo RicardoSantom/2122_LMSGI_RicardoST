@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
-    <xsl:template match="/edificio">
+    <xsl:template match="/">
         <html>
             <head>
                 <title>01.xsl</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>       
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>      
+                <meta charset="UTF-8"/> 
                 <meta name="author" content="Ricardo Santiago Tomé"/>
                 <meta name="application-name" content="ïndice prácticas LMGSI"/>
                 <meta name="description" content="primera practica xsl"/>
@@ -26,7 +27,7 @@
             </head>
             <body>
                 <h1>Información de las viviendas</h1>
-                <xsl:apply-templates select="vivienda"/>
+                <xsl:apply-templates select="edificio/vivienda"/>
                 <div>
                     Número de viviendas <xsl:value-of select='count(//vivienda)'/>
                 </div>
@@ -36,11 +37,9 @@
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="vivienda">
+    <xsl:template match="edificio/vivienda">
         <div>
-            <p> 
-                <xsl:value-of select="concat('Piso:',piso,' Puerta:',puerta)"/>
-            </p>
+            <xsl:value-of select="concat('Piso:',piso,' Puerta:',puerta)"/>
             <ol>
                 <xsl:apply-templates select="vecinos/nombre"/>
             </ol>

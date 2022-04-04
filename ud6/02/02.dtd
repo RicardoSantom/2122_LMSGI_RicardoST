@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!ELEMENT listatickets (ticket+)>
+<!ATTLIST listatickets
+            xmlns:xsi CDATA #IMPLIED
+              xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+>
+<!ELEMENT ticket (numero,fecha,hora,producto+,total)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT producto (nombre,precio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
