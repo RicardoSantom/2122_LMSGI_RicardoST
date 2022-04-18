@@ -17,7 +17,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>02.xsl</title>
+                <title>02.1.xsl</title>
                 <link rel="stylesheet" href="css/estilos.css" type="text/css" />
                 <link href="css/fonts.css"  rel="stylesheet"  type="text/css" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>       
@@ -40,53 +40,46 @@
             <body>
                 <h1>Información de tickets</h1>
                 <h2>Listado de tickets</h2>
-                <xsl:apply-templates select="listatickets/ticket">
-                    <xsl:sort select="numero" datatype="number" order="descending"/>
-                </xsl:apply-templates>
+                <xsl:for-each select="listatickets/ticket">
+                     <xsl:sort select="numero" datatype="number" order="descending"/>
+                    <div>
+                        <xsl:value-of select= "concat('Tickets ',numero/text())"/>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <xsl:for-each select="producto">
+                                    <xsl:sort select="nombre" datatype="text" order="descending"/>
+                                    <tr>
+                                        <td>
+                                            <xsl:value-of select="nombre"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="precio"/>
+                                        </td>
+                                    </tr>
+                                </xsl:for-each>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Total:</th>
+                                    <th>
+                                        <xsl:value-of select="total"/>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="fecha">
+                            <xsl:value-of select="fecha/text()"/>
+                        </div>
+                    </div>
+                </xsl:for-each>
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="listatickets/ticket">
-        <div>
-            <xsl:value-of select= "concat('Tickets ',numero/text())"/>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <xsl:apply-templates select="producto">
-                        <xsl:sort select="nombre" datatype="text" order="descending"/>
-                    </xsl:apply-templates>
-                </tbody>
-                <xsl:if test="total&gt;=3.00">
-                <tfoot>
-                    <tr>
-                        <th>Total:</th>
-                        <th>
-                            <xsl:value-of select="total"/>
-                        </th>
-                    </tr>
-                </tfoot>
-                </xsl:if>
-            </table>
-            <div class="fecha">
-                <xsl:value-of select="fecha/text()"/>
-            </div>
-        </div>
-    </xsl:template>
-    <xsl:template match="producto">
-        <xsl:if test="precio&gt;=1.00">
-            <tr>
-                <td>
-                    <xsl:value-of select="nombre"/>
-                </td>
-                <td>
-                    <xsl:value-of select="precio"/>
-                </td>
-            </tr>
-        </xsl:if>
-    </xsl:template>
 </xsl:stylesheet>
+
