@@ -1,18 +1,59 @@
+html{
+    background-image: url(../../../images/rolloPelicula.png);
+    background-size: 150px 80px;
+    z-index: 3;
+    width: 100%;
+    background-repeat: space;
+}
+body{width: 100%;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
 h1{
     background-color: grey;
    color:white;
    text-align: center;
    width:100%;
+   padding: 10px 0;
+   position: relative;
+   top: -20px;
 }
 footer{
     background-color: grey;
    color:white;
+   font-size: 20px;
    text-align: center;
    position:fixed;
    bottom: 0;
    width: 100%;
-   margin-bottom: 20px;
+   padding-bottom: 5px;
 }
-puntosBajo{
-    background-color: red;
+.nombre{
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 35px;
+    
+}
+.Baja{
+    color: red;
+}
+.Media{
+    color: gold;
+}
+.Alta{
+    color: #009900;
+}
+.caja{
+    border: 1px #000 solid ;
+    width: 30%;
+    display: block;
+    margin: 5px;
+    float: left;
+    height: 220px;
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: center;
+    z-index: 2;
+    background-color: whitesmoke;
 }

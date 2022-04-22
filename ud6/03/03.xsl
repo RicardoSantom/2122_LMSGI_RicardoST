@@ -51,21 +51,31 @@
             </head>
             <body>
                 <h1>Información de películas</h1>
-                <div>
+                <div id="contenedor">
                     <xsl:for-each select="peliculas/pelicula">
                         <xsl:sort select="publico" datatype="text" order="ascending"/>
                         <xsl:sort select="valoracion/@puntos" datatype="number" order="ascending"/>
                         <xsl:sort select="nombre" datatype="text" order="ascending"/>
-                        <div>
-                            <div>
+                        <div class="caja">
+                            <div class="nombre">
                                 <xsl:value-of select="nombre"/>
                             </div>
                             <div>
                                 <xsl:choose>
                                     <xsl:when test="valoracion/@puntos=1 or valoracion/@puntos=2">
-                                    <p id="puntosBajo">
-                                        Puntuacion: Muy Baja
-                                    </p>
+                                        <p class="Baja">
+                                            Puntuacion: Bajo
+                                        </p>
+                                    </xsl:when>
+                                    <xsl:when test="valoracion/@puntos=3 or valoracion/@puntos=4">
+                                        <p class="Media">
+                                            Puntuacion: Media
+                                        </p>
+                                    </xsl:when>
+                                    <xsl:when test="valoracion/@puntos&gt;4">
+                                        <p class="Alta">
+                                            Puntuacion: Alta
+                                        </p>
                                     </xsl:when>
                                 </xsl:choose>
                             </div>
