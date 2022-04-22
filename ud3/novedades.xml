@@ -7,7 +7,7 @@ and open the template in the editor.
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Ricardo Santiago Tomé - Novedades - LMSGI</title>
-        <link>http://192.168.2.114/ud3/novedades.xml</link>
+        <link>http://daw106.ieslossauces.es</link>
         <description>Novedades en las prácticas de la asignatura LMSGI</description>
         <category>novedades</category>
         <category>LMSGI</category>
@@ -34,33 +34,40 @@ and open the template in the editor.
         </skipHours>
         <item>
             <title>Índice general</title>
-            <link>index.html</link>
-            <description>ïndice de todas las prácticas.
-            <![CDATA[ïndice general con todas las prácticas de la asignatura 
-                        Lenguaje de marcas y sistemas de gestión de
-                          1ºDAW]]>
+            <link>https://daw106.ieslossauces.es/</link>
+            <description>
+            <![CDATA[<p>ïndice de todas las prácticas.</p>
+            <p>ïndice general con todas las prácticas de la asignatura 
+                        <strong>Lenguaje de marcas y sistemas de gestión de la informacion<strong></p>
+                          <p>1ºDAW</p>]]>
             </description>
-            <category>html,xml,rss,xsd,dtd,css</category>
+            <category>html</category>
+            <category>xml</category>
+            <category>rss</category>
+            <category>xsd</category>
+            <category>dtd</category>
+            <category>css</category>
             <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
             <pubDate>Tue, 01 Mar 2022 06:13:05 GMT</pubDate>
-            <enclosure url="images/ies_los_sauces.jpg"  length="10642" type="image/jpg"></enclosure>
-            <guid isPermaLink="true">index.html</guid>
+            <enclosure url="http://daw106.ieslossauces.es/images/ies_los_sauces.jpg"  length="10642" type="image/jpg"/>
+            <guid isPermaLink="true">http://daw106.ieslossauces.es/index.html</guid>
         </item>
         <item>
             <title>Prácticas ud04</title>
-            <link>../ud4/01.xml</link>
+            <link>http://daw106.ieslossauces.es../ud4</link>
             <description>Prácticas de la 01  a la 11 de XML-DTD-XSD</description>
             <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
             <pubDate>Tue, 01 Mar 2022 06:13:05 GMT</pubDate>
-            <guid isPermaLink="true">http://localhost/2122_LMSGI_RicardoST/ud4</guid>
+            <guid isPermaLink="true">http://daw106.ieslossauces.es/ud4</guid>
+            <enclosure url="http://daw106.ieslossauces.es/images/ies_los_sauces.jpg"  length="10642" type="image/jpg"/>
         </item>
         <item>
             <title>Prácticas ud05</title>
-            <link>http://192.168.114/ud5</link>
+            <link>http://daw106.ieslossauces.es/ud5</link>
             <description>Prácticas de X-PATH</description>
             <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
             <pubDate>Tue, 01 Mar 2022 06:13:05 GMT</pubDate>
-            <guid isPermaLink="true">http://localhost/2122_LMSGI_RicardoST/ud5</guid>
+            <guid isPermaLink="true">http://daw106.ieslossauces.es/ud5</guid>
         </item>
     </channel>
 </rss>

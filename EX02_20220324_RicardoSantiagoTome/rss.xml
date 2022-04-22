@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>RST-Novedades de Tecnología de la Información</title>
+        <link>http://daw106.ieslossauces.es/EX02_20220324_RicardoSantiagoTome/index.html</link>
+        <description>Este canal aglutina noticias de Tecnología</description>
+        <category>xml</category>
+        <category>open data</category>
+        <copyright>redactor@enParo.esta</copyright>
+        <item>
+            <title>Datos de la Tabla Periodica</title>
+            <link>https://daw106.ieslossauces.es/EX02_20220324_RicardoSantiagoTome/tabla.xml</link>
+            <description>Toca disfrutar de la tabla periódica en formato XML, una manera práctica de guardar datos.</description>
+        </item>
+        <item>
+            <title>Validación de la tabla periódica</title>
+            <link>https://daw106.ieslossauces.es/EX02_20220324_RicardoSantiagoTome/tabla.xsd</link>
+            <description>Esquema que valida los datos guardados en el archivo XML referentes a una tabla periódica</description>
+        </item>
+         <item>
+            <title>Consulstas en la BD alunmos</title>
+            <link>https://daw106.ieslossauces.es/EX02_20220324_RicardoSantiagoTome/xpath.pdf</link>
+            <description>Consultas realizadas en  la base de datos de alumnos.</description>
+        </item>
+    </channel>
+</rss>

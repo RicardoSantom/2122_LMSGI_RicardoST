@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:annotation>
+        <xs:appinfo>03.xsd UD05</xs:appinfo>
+        <xs:documentation xml:lang="es">
+            Este esquema valida un XML del horario de DAW1 año 2021/2022
+        </xs:documentation>
+    </xs:annotation>
+    <!--Declaración tipos simples-->
+    
+    <xs:element name="horarios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="grupo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="hora" minOccurs="0" maxOccurs="6">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dia_sem" maxOccurs="10"  minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="dia" use="required">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:pattern value="lunes|martes|miercoles|jueves|viernes"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                        <xs:attribute name="num" use="required">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:integer">
+                                                                    <xs:pattern value="[1-2]"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="entrada" use="required">
+                                        <xs:annotation>
+                                            <xs:appinfo>
+                                                <xs:explicitTimezone value="es"/>
+                                            </xs:appinfo>
+                                        </xs:annotation>
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:whiteSpace value="collapse"/>
+                                                <xs:pattern value="([0-6][0-9][:]){2}[0-6][0-9]"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="salida" use="required">
+                                        <xs:annotation>
+                                            <xs:appinfo>
+                                                <xs:explicitTimezone value="es"/>
+                                            </xs:appinfo>
+                                        </xs:annotation>
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:whiteSpace value="collapse"/>
+                                                <xs:pattern value="([0-6][0-9][:]){2}[0-6][0-9]"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute  name="idGrupo">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:whiteSpace value="collapse"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="codT">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:whiteSpace value="collapse"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="asignaturas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="asignatura" maxOccurs="10">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="codAsignatura" use="required" type="xs:string"/>
+                                            <xs:attribute name="codProfesor" use="required" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="profesores">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="profesor" maxOccurs="20">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="codigo" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

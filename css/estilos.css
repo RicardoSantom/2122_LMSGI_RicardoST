@@ -75,7 +75,7 @@ section h3{
     font-size: 30px;
     text-align: center;
 }
-#unidad2 h2,#unidad3 h2,#unidad4 h2{
+#unidad2 h2,#unidad3 h2,#unidad4 h2,#unidad5 h2,#unidad6 h2,#unidad7 h2{
     padding-bottom: 1em;
     font-size: 40px;
     text-align: center;
@@ -102,14 +102,14 @@ section h3{
     opacity: 0.6;
     background-image: url(../images/HTML5-CSS3_1.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 60% 60%;
     background-position: center center;
 }
-#section1,#section3{
-    width: 60%;
+#section1,#section3,#section5,#section6{
+    width: 85%;
     margin: 0 auto;
 }
-#section1 ul,#section2 ul,#section3 ul{
+#section1 ul,#section2 ul,#section3 ul,#section4 ul,#section5 ul,#section6 ul{
     border:1px darkslategrey solid;
     box-shadow: 6px -3px 5px black;
     height: 12em;
@@ -124,19 +124,19 @@ section h3{
     position:relative;
     z-index: 2;
 }
-#section1:nth-child(1),#section3:nth-child(1){
+#section1:nth-child(1),#section3:nth-child(1),#section4:nth-child(1),#section5:nth-child(1),#section6:nth-child(1){
     float:left;
 }
-#section1:nth-child(n+12),#section3:nth-child(11){
+#section1:nth-child(n+12),#section3:nth-child(11),#section4:nth-child(11),#section5:nth-child(11),#section6:nth-child(11){
     float:right;
 }
-#section1 li,#section2 li,#section3 li{
+#section1 li,#section2 li,#section3 li,#section4 li,#section5 li,#section6 li{
     padding:0.65em;
 }
-#section1 li p,#section2 li p,#section3 li p{
+#section1 li p,#section2 li p,#section3 li p,#section4 li p,#section5 li p,#section6 li p{
     color: black;
 }
-#section1 li a,#section2 li a,#section3 li a{
+#section1 li a,#section2 li a,#section3 li a,#section4 li a,#section5 li a,#section6 li a{
     color: #b6675b;
     font-weight: 900;
 }
@@ -230,12 +230,12 @@ section h3{
     padding-bottom: 1em;
     width:98%;
     margin:0 auto;
-    max-height: 50em;
+    max-height: 70em;
     display: inline-grid;
     position:relative;
     justify-content:center
 }
-#unidad4{
+#unidad4,#unidad6,#unidad7{
     padding-top: 2em;
     padding-bottom: 2em;
     background-color:#f4f4f4;
@@ -243,11 +243,11 @@ section h3{
     position:relative;
     overflow: hidden;
 }
-#unidad4 ul {
+#unidad4 ul,#unidad6 ul,#unidad7 ul {
     position: relative;
     z-index: 2;
 }
-#unidad4:before {
+#unidad4:before,#unidad6:before,#unidad7:before {
     content: ' ';
     display: inline-grid;
     position: absolute;
@@ -259,7 +259,7 @@ section h3{
     opacity: 0.6;
     background-image: url(../images/xml_filetype_icon.png);
     background-repeat: no-repeat;
-    background-size: 40% 70%;
+    background-size: 50% 40%;
     background-position: center center;
 }
 #section2:nth-child(1){
@@ -279,10 +279,24 @@ section h3{
     color: #b6675b;
     font-weight: 900;
 }
-#section3 ul{
+#section3 ul,#section4 ul,#section5 ul,#section6 ul{
     height: 16em;
     max-height: 16em;
-}/*
+}
+#unidad5{
+    padding-top: 2em;
+    padding-bottom: 3em;
+    width:98%;
+    margin:0 auto;
+    max-height: 90em;
+    display: inline-grid;
+    position:relative;
+    justify-content:center
+}
+#section2 ul:nth-child(odd),#section4 ul:nth-child(odd),#section6:nth-child(odd){
+    background-color: #ddd;
+}
+/*
 article{
     width: 95%;
     margin: 0 auto;
@@ -310,6 +324,28 @@ article{
 #rssbutton{
     width: 50px;
 }
+.github{
+    padding-bottom: 10px;
+    padding-left: 6em;
+}
+.github:before{
+    font-family: logo_github_icon;
+    content:'\f09b';
+    background-color:#66ffff;
+    color:white;
+    font-size: 3em;
+    border-radius: 25px;
+    background-position: bottom;
+}
+.iconogit{
+    background-image: url(../fonts/fontawesome/webfonts/logo_github_icon_143196.ico);
+    background-repeat: no-repeat;
+    height: 6em;
+    position:static;
+    bottom:90px;
+}.iconogit a{
+    position: inherit;
+}
 footer{
     position:fixed;
     bottom: 0;
@@ -318,7 +354,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: grey;
+    background-color: #84a578;
     height: 2em;
     z-index: 2;
 }
@@ -326,4 +362,16 @@ footer address{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 1.25em;
+}
+#enlace2{
+    color:red;
+    background-color: black;
+}
+.enlace2{
+    height: 30px;
+    position: fixed;
+    bottom: 3em;
+    text-align: center;
+    justify-content:center;
+    margin-left: 6em;
 }
