@@ -4,6 +4,10 @@
     src:url(../fonts/fontawesome/webfonts/fa-brands-400.ttf);
 }
 @font-face{
+    font-family:'fa-brands-400-svg';
+    src:url(../fonts/fontawesome/webfonts/fa-brands-400.svg);
+}
+@font-face{
     font-family:'fa-brands-400-woff';
     src:url(fonts/fontawesome/webfonts/fa-brands-400.woff);
 }
