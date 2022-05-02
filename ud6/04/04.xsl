@@ -24,7 +24,7 @@
             <head>
                 <title>04.xsl</title>
                 <link rel="stylesheet" href="css/estilos.css" type="text/css" />
-                <link href="css/fonts.css"  rel="stylesheet"  type="text/css" />
+                <link href="../../css/fonts.css"  rel="stylesheet"  type="text/css" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>       
                 <meta name="author" content="Ricardo Santiago Tomé"/>
                 <meta name="application-name" content="FONTS HTML"/>
@@ -53,28 +53,19 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Matrícula</th>
-                        <th>Reparaciones</th>
+                        <th class="matricula">Matrícula</th>
+                        <th class="reparaciones">Reparaciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
+                        <td class="valorMatricula">
                             <xsl:value-of select="matricula"/>
                         </td>
                         <td>
                             <xsl:apply-templates select="//reparacion[current()/matricula=matricula]"/>
                         </td>
                     </tr>
-                    <div>
-                        Número de reaparaciones: <xsl:value-of select="count(//reparacion[current()/matricula=matricula])"/>
-                    </div>
-                    <div>
-                        Total Horas:<xsl:value-of select="sum(//reparacion[current()/matricula=matricula]/horas)"/>
-                    </div>
-                    <div>
-                        Total a pagar:<xsl:value-of select="sum(//reparacion[current()/matricula=matricula]/horas)*12"/>
-                    </div>
                 </tbody>
             </table>
         </xsl:if>
@@ -87,19 +78,36 @@
         </xsl:text>
     </xsl:template>
     <xsl:template match="//reparacion[current()/matricula=matricula]">
-        <p>
+        <p class="codigoStrong">
             <strong>
                 <xsl:value-of select="current()/@codigo"/>
             </strong>
         </p>
         <ul>
-            <li>
+            <li class="elemento">
                 <xsl:value-of select="descripcion"/>
             </li>
-            <li>
+            <li class="elemento">
                 <xsl:value-of select="concat('Fecha de entrada: ',fecha_entrada)"/>
             </li>
+            <li class="elemento">
+                <xsl:value-of select="concat('Fecha de salida: ',fecha_salida)"/>
+            </li>
+            <li class="elemento">
+                <xsl:value-of select="concat(horas,' ',name(horas))"/>
+            </li>
         </ul>
+        <div class="totales">
+            <div>
+                Número de reparaciones: <xsl:value-of select="count(//reparacion[current()/matricula=matricula])"/>
+            </div>
+            <div class="calculado">
+                Total Horas:<xsl:value-of select="sum(//reparacion[current()/matricula=matricula]/horas)"/>
+            </div>
+            <div>
+                Total a pagar:<xsl:value-of select="sum(//reparacion[current()/matricula=matricula]/horas)*12"/>
+            </div>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>

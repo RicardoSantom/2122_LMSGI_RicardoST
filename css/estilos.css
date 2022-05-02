@@ -64,23 +64,23 @@ main{
     margin: 0 auto;
 }
 #botonHTML{
-                border-style: solid;
-                border-width: 3px;
-                border-color: #606898;
-                outline: none;
-                background-color: #84a578;
-                color: #0000cc;
-                cursor: pointer;
-                border-radius: 10px;
-                font-size:1.5em;
-                display: block;
-                position: relative;
-                height: 1.25em;
-                margin-bottom: 0.75em;
-                margin-right: 3%;
-                left: 85%;
-                vertical-align: middle;
-                text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #606898;
+    background-color: #84a578;
+    color: #0000cc;
+    border-radius: 10px;
+    font-size:1.5em;
+    display: block;
+    position: relative;
+    height: 1.25em;
+    margin-bottom: 0.75em;
+    margin-right: 3%;
+    left: 90%;
+    width: 6em;
+    height: 2.25em;
+    vertical-align: middle;
+    text-align: center;
 }
 
 #unidad2{
@@ -105,6 +105,7 @@ section h3{
     width: 100%;
     position:relative;
     overflow: hidden;
+    max-height: 3500px;
 }
 #unidad2 ul {
     position: relative;
@@ -245,6 +246,7 @@ section h3{
     background-repeat: no-repeat;
     background-position: center center;
 }
+#index01:hover,#index02:hover,#index03:hover{height: 14em}
 #unidad3{
     padding-top: 2em;
     padding-bottom: 1em;
@@ -253,7 +255,9 @@ section h3{
     max-height: 70em;
     display: inline-grid;
     position:relative;
-    justify-content:center
+    justify-content:center;
+    max-height: 1500px;
+
 }
 #unidad4,#unidad6,#unidad7{
     padding-top: 2em;
@@ -344,28 +348,6 @@ article{
 #rssbutton{
     width: 50px;
 }
-.github{
-    padding-bottom: 10px;
-    padding-left: 6em;
-}
-.github:before{
-    font-family: logo_github_icon;
-    content:'\f09b';
-    background-color:#66ffff;
-    color:white;
-    font-size: 3em;
-    border-radius: 25px;
-    background-position: bottom;
-}
-.iconogit{
-    background-image: url(../fonts/fontawesome/webfonts/logo_github_icon_143196.ico);
-    background-repeat: no-repeat;
-    height: 6em;
-    position:static;
-    bottom:90px;
-}.iconogit a{
-    position: inherit;
-}
 footer{
     position:fixed;
     bottom: 0;
@@ -382,6 +364,43 @@ footer address{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 1.25em;
+    display:inline-flex;
+    float:left;
+}
+.github:before{
+    display: inline-block;
+    font-family: FontAwesome;
+    content:'\f09b';
+    background-color:#EC7063;
+    font-size: 2em;
+    border-radius: 25px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.enlaces{
+    display: inline-block;
+    float: inside;
+}
+.enlaces a{
+    position: absolute;
+}
+#rss2{
+    font-size: 15px;
+}
+#rss2{
+    padding-left: 1em;
+}
+#rss2:hover,.github:hover{
+    color: goldenrod;
+}
+#rss2:before{
+    font-family:'FontAwesome';
+    content:'\f09e';
+    background-color:black;
+    color:silver;
+    font-size: 30px;
+    border-radius: 15px;
+    text-decoration: none;
 }
 #enlace2{
     color:red;
@@ -399,47 +418,105 @@ footer address{
 
 /* Navbar container */
 .navbar {
-  overflow: hidden;
-  font-family: Arial;
-  background-color:#f4f4f4;
+    overflow: hidden;
+    font-family: Arial;
 }
-
+.slider{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    z-index: -1;
+    background-image: url('../images/cobre_oxidado.jpg');
+}
+.slider li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    animation:slider 40s linear infinite;
+    -moz-animation: slider 40s linear infinite;
+    -ms-animation:slider 40s linear infinite;
+    -o-animation:slider 40s linear infinite;
+    -webkit-animation: slider 40s linear infinite;
+}
+.slider .image1{
+     background-image:url(../images/html01.png);
+     animation-delay: 35s;
+}
+.slider .image2{
+     background-image:url(../images/html02.png);
+     animation-delay: 30s;
+}
+.slider .image3{
+     background-image:url(../images/html03.png);
+     animation-delay: 25s;
+}
+.slider .image4{
+     background-image:url(../images/html04.png);
+     animation-delay: 20s;
+}
+.slider .image5{
+     background-image:url(../images/html05.png);
+     animation-delay: 15s;
+}
+.slider .image6{
+     background-image:url(../images/html06.png);
+     animation-delay: 10s;
+}
+.slider .image7{
+     background-image:url(../images/html07.png);
+     animation-delay: 5s;
+}
+.slider .image8{
+     background-image:url(../images/html08.png);
+     animation-delay: 0s;
+}
+@keyframes slider{
+    0%{opacity:0;animation-timing-function:ease-in;}
+    10%{opacity:1;animation-timing-fuction:ease-out;}
+    25%{opacity:1;transform:scale(1);}
+    50%{opacity:1;transform:scale(2);}
+    100%{opacity:0;}
+}
 /* Links inside the navbar */
 .navbar a {
-  float: left;
-  font-size: 26px;
-  color: #003333;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    float: left;
+    font-size: 26px;
+    color: #003333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 /* The dropdown container */
 .dropdown {
-  float: left;
-  overflow: hidden;
-  min-height: 300px;
+    float: left;
+    overflow: hidden;
+    min-height: 300px;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
     height: 60px;
-  font-size: 36px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: #003333;
-  font: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+    font-size: 36px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: #003333;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
 }
 
 .dropbtn{font-weight: bolder;
-        font-size: 60px;
+         font-size: 60px;
 }
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+    background-color: red;
 }
 
 .fa {
@@ -456,55 +533,55 @@ footer address{
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 /* Mega Menu header, if needed */
 .dropdown-content .header {
-  background: red;
-  padding: 16px;
-  color: white;
+    background: red;
+    padding: 16px;
+    color: white;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  background-color: #ccc;
-  height: 250px;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #ccc;
+    height: 250px;
 }
 
 /* Style links inside the columns */
 .column a {
-  float: none;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 /* Add a background color on hover */
 .column a:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 .ud02 li a{background-color: whitesmoke;}
 dropbtn{
@@ -522,4 +599,35 @@ dropbtn{
     text-align: center;
     align-items: flex-start;
     cursor: default;
+}
+.botones{
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90%;
+    margin-bottom: 3em;
+    left: 20px;
+    z-index: 99;
+}
+.botonInicio{
+    display: inline-block;
+    float:right;
+    margin-right: 20px;
+    z-index: 99;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #606898;
+    outline: none;
+    width: 6em;
+    height: 3em;
+    background-color: transparent;
+    color: #606898;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size:1.2em;
+    background-color: salmon;
+    text-align: center;
+}
+#botonInicio:hover {
+    background-color: #555;
 }

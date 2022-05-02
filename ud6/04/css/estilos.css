@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 may. 2022, 19:38:38
+    Author     : Usuario
+*/
+*{
+    font-family: 'Permanent Marker';
+}
+/*Duplico la regla para que solo me aplique la segunda, que es la que coincide
+con la imagen de referencia del pdf*/
+*{
+    font-family: cursive;
+}
+h1,h2,.matricula,.reparaciones,.totales{
+    color: #fff;
+    background-color: #387ab6;
+}
+.matricula,.reparaciones{
+    border: #fff 2px solid;
+    padding: 1em 0;
+}
+table{
+     border-collapse: separate;
+     border: black 1px double;
+}
+table,h1,h2{
+    width: 60%;
+    margin: 0 auto;
+}
+h1,h2,.totales{font-variant: small-caps}
+tr,td,th{
+    border-collapse: separate;
+     border: black 1px double;
+}
+.totales{
+    margin-bottom: 1em;
+}
+.elemento{
+    padding: 1em 0;
+}
+.calculado{
+    padding: 1.5em 0;
+}
+.valorMatricula{
+    text-align: center ;
+    width: 50%;
+}
+.codigoStrong{
+    margin-top: 0;
+}
+.codigoStrong,.elemento{
+    font-weight: 500;
+    letter-spacing: -0.1em;
+}
+.valorMatricula{
+    font-weight: bolder;
+}
