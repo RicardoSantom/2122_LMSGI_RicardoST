@@ -13,7 +13,7 @@ body{
     min-width: 475px;
     position:absolute;
     z-index: 1;
-    /*background-color: #f4f4f4;*/
+    background-color: #f4f4f4;
     background-image: url('../images/cobre_oxidado.jpg');
     justify-content:center
 }
@@ -31,64 +31,169 @@ header{
     height: 100px;
     width: 100%;
 }
-.topnav{
-    display: inline-block;
-    background-color: #333;
-    overflow: hidden;
-    margin-top: 1.5em;
-    border-radius: 3%;
-    max-height: 1600px;
+/*Desde aquí hasta @keyframes son reglas de estilos para mostrar
+imágines animadas*/
+.slider{
+    width: 100%;
+    height: 20em;
+    position: absolute;
+    top: 6em;
+    max-height: 20em;
+    left: 0;
+    background-position: center center;
+    z-index: -1;
+    background-image: url('../images/cobre_oxidado.jpg');
+    clear: both;
 }
-.topnav a {
+.slider li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    animation:slider 40s linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -moz-animation: slider 40s alternate infinite;
+    -ms-animation:slider 40s alternate infinite;
+    -o-animation:slider 40s alternate infinite;
+    -webkit-animation: slider 40s alternate infinite;
+}
+.slider .image1{
+     background-image:url(../images/html01.png);
+     animation-delay: 35s;
+}
+.slider .image2{
+     background-image:url(../images/html02.png);
+     animation-delay: 30s;
+}
+.slider .image3{
+     background-image:url(../images/html03.png);
+     animation-delay: 25s;
+}
+.slider .image4{
+     background-image:url(../images/html04.png);
+     animation-delay: 20s;
+}
+.slider .image5{
+     background-image:url(../images/html05.png);
+     animation-delay: 15s;
+}
+.slider .image6{
+     background-image:url(../images/html06.png);
+     animation-delay: 10s;
+}
+.slider .image7{
+     background-image:url(../images/html07.png);
+     animation-delay: 5s;
+}
+.slider .image8{
+     background-image:url(../images/html08.png);
+     animation-delay: 0s;
+}
+@keyframes slider{
+    0%{opacity:0;animation-timing-function:ease-in;}
+    10%{opacity:1;animation-timing-fuction:ease-out;}
+    25%{opacity:1;transform:scale(1);}
+    50%{opacity:1;transform:scale(2);}
+    100%{opacity:0;}
+}
+/*barra de navegación índice*/
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+}
+/* enlaces en la barra de navegación */
+.navbar a {
     float: left;
-    background-color: #b698a0;
-    color: #b6675b;
+    font-size: 26px;
+    color: #003333;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
 }
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+.desplegable {
+    float: left;
+    overflow: hidden;
+    min-height: 300px;
 }
-.topnav a.active {
-    background-color: #666666;
+.desplegable .botonDesplegable {
+    height: 6em;
+    font-size: 6em;
+    border: none;
+    outline: none;
     color: white;
+    padding: 2em 3em;
+    background-color: #003333;
+    font: inherit;
+    margin: 0;
+}
+.navbar a:hover, .desplegable:hover .botonDesplegable:hover{
+    background-color: red;
+}
+.iconoDesplegable:before {
+    content: "\f0d7";
+    display: inline-block;
+    font: normal normal normal 24px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Contenido desplegable oculto por defecto */
+.contenidoDesplegable {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.contenidoDesplegable .tituloDesplegable {
+    background: red;
+    padding: 16px;
+    color: white;
+}
+.desplegable:hover .contenidoDesplegable {
+    display: block;
+}
+.columna {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #ccc;
+    height: 250px;
+}
+.columna a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.columna a:hover {
+    background-color: #ddd;
+}
+/* Limpia flotación de elementos despues de las columnas */
+.columnas:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+li a{background-color: whitesmoke;}
+.botonDesplegable{
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    font-size: 3em;
 }
 main{
     width: 100%;
     font-family: 'Goldman-Regular-ttf';
     height: 750em;
     display: contents;
-    margin: 0 auto;
-}
-#botonHTML{
-    border-style: solid;
-    border-width: 3px;
-    border-color: #606898;
-    background-color: #84a578;
-    color: #0000cc;
-    border-radius: 10px;
-    font-size:1.5em;
-    display: block;
-    position: relative;
-    height: 1.25em;
-    margin-bottom: 0.75em;
-    margin-right: 3%;
-    left: 90%;
-    width: 6em;
-    height: 2.25em;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#unidad2{
-    width: 100%;
-    background-color: #f4f4f4;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    max-height: 4000px;
     margin: 0 auto;
 }
 section h3{
@@ -100,12 +205,15 @@ section h3{
     font-size: 40px;
     text-align: center;
 }
-#unidad2{
+#unidad2,#unidad6{
     background-color:#f4f4f4;
     width: 100%;
     position:relative;
     overflow: hidden;
-    max-height: 3500px;
+    max-height: 4000px;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 #unidad2 ul {
     position: relative;
@@ -113,7 +221,7 @@ section h3{
 }
 #unidad2:before {
     content: ' ';
-    display: inline-grid;
+    display: inline-flex;
     position: absolute;
     left: 0;
     top: 0;
@@ -246,7 +354,7 @@ section h3{
     background-repeat: no-repeat;
     background-position: center center;
 }
-#index01:hover,#index02:hover,#index03:hover{height: 14em}
+/*#index01:hover,#index02:hover,#index03:hover{height: 225px}*/
 #unidad3{
     padding-top: 2em;
     padding-bottom: 1em;
@@ -271,7 +379,7 @@ section h3{
     position: relative;
     z-index: 2;
 }
-#unidad4:before,#unidad6:before,#unidad7:before {
+#unidad4:before,#unidad7:before {
     content: ' ';
     display: inline-grid;
     position: absolute;
@@ -282,8 +390,8 @@ section h3{
     z-index: 1;
     opacity: 0.6;
     background-image: url(../images/xml_filetype_icon.png);
-    background-repeat: no-repeat;
-    background-size: 50% 40%;
+    background-repeat: repeat-y;
+    background-size: contain;
     background-position: center center;
 }
 #section2:nth-child(1){
@@ -317,288 +425,23 @@ section h3{
     position:relative;
     justify-content:center
 }
-#section2 ul:nth-child(odd),#section4 ul:nth-child(odd),#section6:nth-child(odd){
-    background-color: #ddd;
-}
-/*
-article{
-    width: 95%;
-    margin: 0 auto;
-    position:relative;
-    z-index: 2;
-}
-article:before{
-    content: ' ';
-    display: block;
+#unidad6:before{
+     content: ' ';
+    display: inline-grid;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+    background-image: url(../images/imagenXslt3.png);
     z-index: 1;
     opacity: 0.6;
-}   
-article{
-    position: relative;
-    background-color:#f4f4f4;
-    overflow: hidden;
-    margin:0 auto;
-    width: 95%;
-}*/
-#rssbutton{
-    width: 50px;
-}
-footer{
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    margin-top:10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: #84a578;
-    height: 2em;
-    z-index: 2;
-}
-footer address{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    font-size: 1.25em;
-    display:inline-flex;
-    float:left;
-}
-.github:before{
-    display: inline-block;
-    font-family: FontAwesome;
-    content:'\f09b';
-    background-color:#EC7063;
-    font-size: 2em;
-    border-radius: 25px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.enlaces{
-    display: inline-block;
-    float: inside;
-}
-.enlaces a{
-    position: absolute;
-}
-#rss2{
-    font-size: 15px;
-}
-#rss2{
-    padding-left: 1em;
-}
-#rss2:hover,.github:hover{
-    color: goldenrod;
-}
-#rss2:before{
-    font-family:'FontAwesome';
-    content:'\f09e';
-    background-color:black;
-    color:silver;
-    font-size: 30px;
-    border-radius: 15px;
-    text-decoration: none;
-}
-#enlace2{
-    color:red;
-    background-color: black;
-}
-.enlace2{
-    height: 30px;
-    position: fixed;
-    bottom: 3em;
-    text-align: center;
-    justify-content:center;
-    margin-left: 6em;
-}
-
-
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-    font-family: Arial;
-}
-.slider{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-repeat: repeat-y;
+    background-size: contain;
     background-position: center center;
-    z-index: -1;
-    background-image: url('../images/cobre_oxidado.jpg');
 }
-.slider li{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-position: center center;
-    animation:slider 40s linear infinite;
-    -moz-animation: slider 40s linear infinite;
-    -ms-animation:slider 40s linear infinite;
-    -o-animation:slider 40s linear infinite;
-    -webkit-animation: slider 40s linear infinite;
-}
-.slider .image1{
-     background-image:url(../images/html01.png);
-     animation-delay: 35s;
-}
-.slider .image2{
-     background-image:url(../images/html02.png);
-     animation-delay: 30s;
-}
-.slider .image3{
-     background-image:url(../images/html03.png);
-     animation-delay: 25s;
-}
-.slider .image4{
-     background-image:url(../images/html04.png);
-     animation-delay: 20s;
-}
-.slider .image5{
-     background-image:url(../images/html05.png);
-     animation-delay: 15s;
-}
-.slider .image6{
-     background-image:url(../images/html06.png);
-     animation-delay: 10s;
-}
-.slider .image7{
-     background-image:url(../images/html07.png);
-     animation-delay: 5s;
-}
-.slider .image8{
-     background-image:url(../images/html08.png);
-     animation-delay: 0s;
-}
-@keyframes slider{
-    0%{opacity:0;animation-timing-function:ease-in;}
-    10%{opacity:1;animation-timing-fuction:ease-out;}
-    25%{opacity:1;transform:scale(1);}
-    50%{opacity:1;transform:scale(2);}
-    100%{opacity:0;}
-}
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    font-size: 26px;
-    color: #003333;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-    min-height: 300px;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    height: 60px;
-    font-size: 36px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: #003333;
-    font: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
-
-.dropbtn{font-weight: bolder;
-         font-size: 60px;
-}
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.fa-caret-down:before {
-    content: "\f0d7";
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 100%;
-    left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-/* Mega Menu header, if needed */
-.dropdown-content .header {
-    background: red;
-    padding: 16px;
-    color: white;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    background-color: #ccc;
-    height: 250px;
-}
-
-/* Style links inside the columns */
-.column a {
-    float: none;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Add a background color on hover */
-.column a:hover {
+#section2 ul:nth-child(odd),#section4 ul:nth-child(odd),#section6:nth-child(odd){
     background-color: #ddd;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.ud02 li a{background-color: whitesmoke;}
-dropbtn{
-    appearance: auto;
-    writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
 }
 .botones{
     display: block;
@@ -630,4 +473,56 @@ dropbtn{
 }
 #botonInicio:hover {
     background-color: #555;
+}
+.github:before{
+    display: inline-block;
+    font-family: FontAwesome;
+    content:'\f09b';
+    background-color:#EC7063;
+    font-size: 2em;
+    border-radius: 25px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.enlaces{
+    display: inline-block;
+    float: inside;
+}
+.enlaces a{
+    position: absolute;
+}
+#rss2{
+    font-size: 15px;
+    padding-left: 1em;
+}
+#rss2:hover,.github:hover{
+    color: goldenrod;
+}
+#rss2:before{
+    font-family:'FontAwesome';
+    content:'\f09e';
+    background-color:black;
+    color:silver;
+    font-size: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #84a578;
+    height: 2em;
+    z-index: 2;
+}
+footer address{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.25em;
+    display:inline-flex;
+    float:left;
 }
