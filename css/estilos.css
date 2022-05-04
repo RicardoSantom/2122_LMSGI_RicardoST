@@ -17,19 +17,15 @@ body{
     background-image: url('../images/cobre_oxidado.jpg');
     justify-content:center
 }
-header{
+header h1{
     font-size: 3.25em;
     text-align: center;
     color: #f4f4f4;
     padding: 0.5em ;
     background-color: #666666;
-}
-.encabezado{
-    background-color:#d6675b;
-    text-align: center;
-    max-height: 150px;
-    height: 100px;
-    width: 100%;
+    text-decoration: underline #ff0000 solid;
+    text-shadow: -16px 2px 16px  red;
+    text-underline-offset: 20%;
 }
 /*Desde aquí hasta @keyframes son reglas de estilos para mostrar
 imágines animadas*/
@@ -182,12 +178,16 @@ imágines animadas*/
     clear: both;
 }
 li a{background-color: whitesmoke;}
+li p{background-color: #cccccc;}
 .botonDesplegable{
     display: inline-block;
     text-align: center;
     align-items: flex-start;
     cursor: default;
     font-size: 3em;
+}
+strong{
+    font-size: xx-large;
 }
 main{
     width: 100%;
@@ -269,92 +269,24 @@ section h3{
     color: #b6675b;
     font-weight: 900;
 }
-#index01:hover{
+#section1 ul:hover{
     background-color: #666666;
-    background-image:url(../images/html01.png);
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: center center;
 }
-#index02:hover{
-    background-color: #666666;
-    background-image:url(../images/html02.png);
-
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index03:hover{
-    background-color: #666666;
-    background-image:url(../images/html03.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index04:hover{
-    background-color: #666666;
-    background-image:url(../images/html04.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index05:hover{
-    background-color: #666666;
-    background-image:url(../images/html05.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index06:hover{
-    background-color: #666666;
-    background-image:url(../images/html06.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index07:hover{
-    background-color: #666666;
-    background-image:url(../images/html07.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index08:hover{
-    background-color: #666666;
-    background-image:url(../images/html08.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index09:hover{
-    background-color: #666666;
-    background-image:url(../images/html09.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index10:hover{
-    background-color: #666666;
-    background-image:url(../images/html10.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index11:hover{
-    background-color: #666666;
-    background-image:url(../images/html11.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#index12:hover{
-    background-color: #666666;
-    background-image:url(../images/html12.png);
-    background-size: 220px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-/*#index01:hover,#index02:hover,#index03:hover{height: 225px}*/
+#index01:hover{background-image:url(../images/html01.png);}
+#index02:hover{background-image:url(../images/html02.png);}
+#index03:hover{background-image:url(../images/html03.png);}
+#index04:hover{background-image:url(../images/html04.png);}
+#index05:hover{background-image:url(../images/html05.png);}
+#index06:hover{background-image:url(../images/html06.png);}
+#index07:hover{background-image:url(../images/html07.png);}
+#index08:hover{background-image:url(../images/html08.png);}
+#index09:hover{background-image:url(../images/html09.png);}
+#index10:hover{background-image:url(../images/html10.png);}
+#index11:hover{background-image:url(../images/html11.png);}
+#index12:hover{background-image:url(../images/html12.png);}
 #unidad3{
     padding-top: 2em;
     padding-bottom: 1em;
@@ -394,24 +326,9 @@ section h3{
     background-size: contain;
     background-position: center center;
 }
-#section2:nth-child(1){
-    float:left;
-}
-#section2:nth-child(n+5){
-    float:right;
-}
-#section2 ul{
-    padding:3.5em;
-    margin-left: 3em;
-}
-#section2 li p{
-    color: black;
-}
-#section2 li a{
-    color: #b6675b;
-    font-weight: 900;
-}
-#section3 ul,#section4 ul,#section5 ul,#section6 ul{
+#section2:nth-child(1){float:left;}
+#section2:nth-child(n+5){float:right;}
+section3 ul,#section4 ul,#section5 ul,#section6 ul{
     height: 16em;
     max-height: 16em;
 }
@@ -471,9 +388,6 @@ section h3{
     background-color: salmon;
     text-align: center;
 }
-#botonInicio:hover {
-    background-color: #555;
-}
 .github:before{
     display: inline-block;
     font-family: FontAwesome;
@@ -488,25 +402,24 @@ section h3{
     display: inline-block;
     float: inside;
 }
-.enlaces a{
-    position: absolute;
-}
+.enlaces a{position: absolute;}
 #rss2{
     font-size: 15px;
     padding-left: 1em;
 }
-#rss2:hover,.github:hover{
-    color: goldenrod;
-}
 #rss2:before{
-    font-family:'FontAwesome';
+    display: inline-block;
+    font-family:FontAwesome;
     content:'\f09e';
     background-color:black;
     color:silver;
     font-size: 30px;
     border-radius: 15px;
     text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+#rss2:hover,.github:hover,.botonInicio:hover{color: goldenrod;}
 footer{
     position:fixed;
     bottom: 0;
