@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="02.xsl"?>
 <!DOCTYPE listatickets SYSTEM "02.dtd">
 <listatickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="02.xsd">
     <!-- -->
@@ -24,10 +23,6 @@
         <numero>7484</numero>
         <fecha>2012-01-21</fecha>
         <hora>22:05:00</hora>
-        <producto>
-            <nombre>Cerveza</nombre>
-            <precio>1.00</precio>
-        </producto>	
         <producto>
             <nombre>Refresco</nombre>
             <precio>1.00</precio>

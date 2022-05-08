@@ -19,7 +19,7 @@
             <head>
                 <title>02.xsl</title>
                 <link rel="stylesheet" href="css/estilos.css" type="text/css" />
-                <link href="css/fonts.css"  rel="stylesheet"  type="text/css" />
+                <link href="../../css/fonts.css"  rel="stylesheet"  type="text/css" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>       
                 <meta name="author" content="Ricardo Santiago Tomé"/>
                 <meta name="application-name" content="FONTS HTML"/>
@@ -40,53 +40,65 @@
             <body>
                 <h1>Información de tickets</h1>
                 <h2>Listado de tickets</h2>
-                <xsl:apply-templates select="listatickets/ticket">
-                    <xsl:sort select="numero" datatype="number" order="descending"/>
-                </xsl:apply-templates>
+                <xsl:for-each select="listatickets/ticket">
+                    <xsl:sort select="numero" datatype="number" order="ascending"/>
+                    <div class="numeroTicket">
+                        <p class="pNumeroTicket">
+                            <xsl:value-of select= "concat('Tickets: ',numero/text())"/>
+                        </p>
+                        <table class="tabla">
+                            <thead>
+                                <tr>
+                                    <th class="negrita">Producto</th>
+                                    <th class="negrita">Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <xsl:for-each select="producto">
+                                    <xsl:sort select="nombre" datatype="text" order="ascending"/>
+                                    <tr>
+                                        <td class="nombre">
+                                            <xsl:value-of select="nombre"/>
+                                        </td>
+                                        <td class="precio">
+                                            <xsl:value-of select="precio"/>
+                                        </td>
+                                    </tr>
+                                </xsl:for-each>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Total</th>
+                                    <th>
+                                        <xsl:value-of select="total"/>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div>
+                            <p class="fecha">
+                                <xsl:value-of select="concat('FECHA DEL TICKET ',fecha/text())"/>
+                            </p>
+                        </div>
+                    </div>
+                </xsl:for-each>
+                <div class="foot">
+                    <xsl:apply-templates select="listatickets"/>
+                </div>
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="listatickets/ticket">
+    <xsl:template match="listatickets">
         <div>
-            <xsl:value-of select= "concat('Tickets ',numero/text())"/>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <xsl:apply-templates select="producto">
-                        <xsl:sort select="nombre" datatype="text" order="descending"/>
-                    </xsl:apply-templates>
-                </tbody>
-                <xsl:if test="total&gt;=3.00">
-                <tfoot>
-                    <tr>
-                        <th>Total:</th>
-                        <th>
-                            <xsl:value-of select="total"/>
-                        </th>
-                    </tr>
-                </tfoot>
-                </xsl:if>
-            </table>
-            <div class="fecha">
-                <xsl:value-of select="fecha/text()"/>
-            </div>
+            <p class="pFoot">
+                <xsl:value-of select="concat('NÚMERO DE TICKETS: ',count(ticket))"/>
+            </p>
+        </div>
+        <div>
+            <p class="pFoot">
+                <xsl:value-of select="concat('TOTAL DE TICKETS: ',sum(//precio))"/>
+            </p>
         </div>
     </xsl:template>
-    <xsl:template match="producto">
-        <xsl:if test="precio&gt;=1.00">
-            <tr>
-                <td>
-                    <xsl:value-of select="nombre"/>
-                </td>
-                <td>
-                    <xsl:value-of select="precio"/>
-                </td>
-            </tr>
-        </xsl:if>
-    </xsl:template>
 </xsl:stylesheet>
+

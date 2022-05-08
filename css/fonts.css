@@ -4,6 +4,10 @@
     src:url(../fonts/fontawesome/webfonts/fa-brands-400.ttf);
 }
 @font-face{
+    font-family:'fa-brands-400-svg';
+    src:url(../fonts/fontawesome/webfonts/fa-brands-400.svg);
+}
+@font-face{
     font-family:'fa-brands-400-woff';
     src:url(fonts/fontawesome/webfonts/fa-brands-400.woff);
 }
@@ -82,4 +86,8 @@
 @font-face{
     font-familly : 'git-repository';
     src: url(../fonts/fontawesome/webfonts/git-repository-fill.svg);
+}
+@font-face{
+    font-familly : 'Permanent Marker';
+    src: url(../fonts/PermanentMarker-Regular.ttf);
 }

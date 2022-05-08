@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-    Document   : 02.xsl
-    Created on : 4 de abril de 2022, 9:06
+    Document   : 03.xsl
+    Created on : 20 de abril de 2022, 18:16
     Author     : daw1
     Description:
         Purpose of transformation follows.
@@ -17,7 +17,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>02.1.xsl</title>
+                <title>03.xsl</title>
                 <link rel="stylesheet" href="css/estilos.css" type="text/css" />
                 <link href="css/fonts.css"  rel="stylesheet"  type="text/css" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>       
@@ -41,7 +41,7 @@
                 <h1>Información de tickets</h1>
                 <h2>Listado de tickets</h2>
                 <xsl:for-each select="listatickets/ticket">
-                     <xsl:sort select="numero" datatype="number" order="descending"/>
+                    <xsl:sort select="numero" datatype="number" order="descending"/>
                     <div>
                         <xsl:value-of select= "concat('Tickets ',numero/text())"/>
                         <table>
@@ -55,21 +55,25 @@
                                 <xsl:for-each select="producto">
                                     <xsl:sort select="nombre" datatype="text" order="descending"/>
                                     <tr>
-                                        <td>
-                                            <xsl:value-of select="nombre"/>
-                                        </td>
-                                        <td>
-                                            <xsl:value-of select="precio"/>
-                                        </td>
+                                        <xsl:if test="nombre!='Cerveza'">
+                                            <td>
+                                                <xsl:value-of select="nombre"/>
+                                            </td>
+                                            <td>
+                                                <xsl:value-of select="precio"/>
+                                            </td>
+                                        </xsl:if>
                                     </tr>
                                 </xsl:for-each>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <th>Total:</th>
-                                    <th>
-                                        <xsl:value-of select="total"/>
-                                    </th>
+                                    <xsl:if test="total&gt;=1.70">
+                                        <th>
+                                            <xsl:value-of select="total"/>
+                                        </th>
+                                    </xsl:if>
                                 </tr>
                             </tfoot>
                         </table>
@@ -78,8 +82,13 @@
                         </div>
                     </div>
                 </xsl:for-each>
+                <xsl:for-each select="listatickets">
+                    <p>
+                        <strong>Total factura: </strong>
+                        <xsl:value-of select="sum(//precio)"/>
+                    </p>
+                </xsl:for-each>
             </body>
         </html>
     </xsl:template>
 </xsl:stylesheet>
-
