@@ -17,14 +17,14 @@ body{
     background-image: url('../images/cobre_oxidado.jpg');
     justify-content:center
 }
-header h1{
+#tituloPrincipal{
     font-size: 3.25em;
     text-align: center;
     color: #f4f4f4;
     padding: 0.5em ;
     background-color: #666666;
-    text-decoration: underline #ff0000 solid;
-    text-shadow: -16px 2px 16px  red;
+    text-decoration: underline #84a578 solid;
+    text-shadow: -16px 2px 16px  #84a578;
     text-underline-offset: 20%;
 }
 /*Desde aquí hasta @keyframes son reglas de estilos para mostrar
@@ -55,36 +55,36 @@ imágines animadas*/
     -webkit-animation: slider 40s alternate infinite;
 }
 .slider .image1{
-     background-image:url(../images/html01.png);
-     animation-delay: 40s;
+    background-image:url(../images/html01.png);
+    animation-delay: 40s;
 }
 .slider .image2{
-     background-image:url(../images/html02.png);
-     animation-delay: 35s;
+    background-image:url(../images/html02.png);
+    animation-delay: 35s;
 }
 .slider .image3{
-     background-image:url(../images/html03.png);
-     animation-delay: 30s;
+    background-image:url(../images/html03.png);
+    animation-delay: 30s;
 }
 .slider .image4{
-     background-image:url(../images/html04.png);
-     animation-delay: 25s;
+    background-image:url(../images/html04.png);
+    animation-delay: 25s;
 }
 .slider .image5{
-     background-image:url(../images/html05.png);
-     animation-delay: 20s;
+    background-image:url(../images/html05.png);
+    animation-delay: 20s;
 }
 .slider .image6{
-     background-image:url(../images/html06.png);
-     animation-delay: 15s;
+    background-image:url(../images/html06.png);
+    animation-delay: 15s;
 }
 .slider .image7{
-     background-image:url(../images/html07.png);
-     animation-delay: 10s;
+    background-image:url(../images/html07.png);
+    animation-delay: 10s;
 }
 .slider .image8{
-     background-image:url(../images/html08.png);
-     animation-delay: 5s;
+    background-image:url(../images/html08.png);
+    animation-delay: 5s;
 }
 @keyframes slider{
     0%{opacity:0;animation-timing-function:ease-in;}
@@ -122,6 +122,17 @@ imágines animadas*/
     background-color: #003333;
     font: inherit;
     margin: 0;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #49ff18, 0 0 50px #49ff18, 0 0 60px #49ff18, 0 0 70px #49ff18;
+  }
+  to {
+    text-shadow: 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FFF, 0 0 50px #49ff18, 0 0 60px #49ff18, 0 0 70px #49ff18, 0 0 80px #49ff18;
+  }
 }
 .navbar a:hover, .desplegable:hover .botonDesplegable:hover{
     background-color: red;
@@ -317,8 +328,8 @@ section h3{
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     z-index: 1;
     opacity: 0.6;
     background-image: url(../images/xml_filetype_icon.png);
@@ -343,7 +354,7 @@ section3 ul,#section4 ul,#section5 ul,#section6 ul{
     justify-content:center
 }
 #unidad6:before{
-     content: ' ';
+    content: ' ';
     display: inline-grid;
     position: absolute;
     left: 0;
@@ -364,15 +375,16 @@ section3 ul,#section4 ul,#section5 ul,#section6 ul{
     display: block;
     position: -webkit-sticky;
     position: sticky;
-    top: 90%;
+    top: 82%;
     margin-bottom: 3em;
     left: 20px;
     z-index: 99;
 }
 .botonInicio{
-    display: inline-block;
+    display: inline-flex;
     float:right;
     margin-right: 20px;
+    padding-bottom: 40px;
     z-index: 99;
     border-style: solid;
     border-width: 3px;
@@ -389,7 +401,6 @@ section3 ul,#section4 ul,#section5 ul,#section6 ul{
     text-align: center;
 }
 .github:before{
-    display: inline-block;
     font-family: FontAwesome;
     content:'\f09b';
     background-color:#EC7063;
@@ -398,11 +409,12 @@ section3 ul,#section4 ul,#section5 ul,#section6 ul{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.github{margin-right: 3em;}
-.enlaces a{display: inline;}
+#enlaces{
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
 #rss2{font-size: 15px;}
-#rss2:before{
-    display: inline-block;
+#rss2:before,.rss2:before{
     font-family:FontAwesome;
     content:'\f09e';
     background-color:black;
@@ -416,6 +428,7 @@ section3 ul,#section4 ul,#section5 ul,#section6 ul{
 #rss2:hover,.github:hover,.botonInicio:hover{color: goldenrod;}
 footer{
     position:fixed;
+    display: inline-flex;
     bottom: 0;
     width: 100%;
     margin-top:10px;
@@ -423,13 +436,10 @@ footer{
     margin-right: auto;
     text-align: center;
     background-color: #84a578;
-    height: 2em;
+    max-height: 6em;
     z-index: 2;
 }
 footer address{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding: 0.5em;
     font-size: 1.25em;
-    display:inline-flex;
-    float:left;
 }
