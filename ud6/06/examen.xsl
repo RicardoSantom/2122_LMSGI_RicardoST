@@ -14,12 +14,12 @@
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
-    <xsl:param name="solucion" select="'si'"/>
+    <xsl:param name="solucion" select="'no'"/>
     <xsl:template match="/">
         <html>
             <head>
                 <title>examen.xsl</title>
-                <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+                <link rel="stylesheet" href="css/meses.css" type="text/css" />
                 <link href="css/fonts.css"  rel="stylesheet"  type="text/css" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>       
                 <meta name="author" content="Ricardo Santiago Tomé"/>
@@ -50,40 +50,46 @@
                 </h3>
                 <form action="/action_page.php"  method="POST" name="examen" id="formularioExamen" autocomplete="off">
                     <xsl:for-each select="examen/preguntas/pregunta">
-                        <fieldset>
-                            <div id="pregunta">
-                                <xsl:value-of select="concat(@id,' ',enunciado)"/>
-                                <xsl:for-each select="respuestas/respuesta">
-                                    <div>
-                                        <input type="radio" name="pregunta" id="pregunta">
-                                            <xsl:attribute name="id">
-                                                <xsl:value-of select="concat('pregunta',../../@id,position())"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="name">
-                                                <xsl:value-of select="concat('pregunta',../../@id)"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="value">
-                                                <xsl:value-of select="position()"/>
-                                            </xsl:attribute>
-                                            <xsl:if test="@correcta='correcta' and $solucion!='no'">
-                                                <xsl:attribute name="checked">
-                                                    <xsl:value-of select="checked"/>
-                                                </xsl:attribute>
-                                            </xsl:if>
-                                            <xsl:if test="$solucion!='no'">
-                                                 <xsl:attribute name="disabled">
-                                                    <xsl:value-of select="disabled"/>
-                                                </xsl:attribute>
-                                            </xsl:if>
-                                        </input>
-                                        <label>
-                                            <xsl:value-of select="current()"/>
-                                        </label>
-                                    </div>
-                                </xsl:for-each>
+                        <fieldset class="pregunta">
+                            <div class="enunciado">
+                                <xsl:value-of select="concat(@id,'.-',enunciado)"/>
                             </div>
+                            <xsl:for-each select="respuestas/respuesta">
+                                <div class="respuestas">
+                                    <input type="radio" name="pregunta" class="pregunta">
+                                        <xsl:attribute name="id">
+                                            <xsl:value-of select="concat('pregunta',../../@id,position())"/>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="name">
+                                            <xsl:value-of select="concat('pregunta',../../@id)"/>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="value">
+                                            <xsl:value-of select="position()"/>
+                                        </xsl:attribute>
+                                        <xsl:if test="@correcta='correcta' and $solucion!='no'">
+                                            <xsl:attribute name="checked">
+                                                <xsl:value-of select="checked"/>
+                                            </xsl:attribute>
+                                        </xsl:if>
+                                        <xsl:if test="$solucion!='no'">
+                                            <xsl:attribute name="disabled">
+                                                <xsl:value-of select="disabled"/>
+                                            </xsl:attribute>
+                                        </xsl:if>
+                                    </input>
+                                    <label>
+                                        <xsl:value-of select="current()"/>
+                                    </label>
+                                </div>
+                            </xsl:for-each>
                         </fieldset>
                     </xsl:for-each>
+                    <xsl:if test="$solucion!='si'">
+                        <fieldset id="botones">
+                            <input type="submit" value="Enviar formulario" id="botonEnviar"/>
+                            <input type="reset" value="Borrar formulario" id="botonBorrar"/>
+                        </fieldset>
+                    </xsl:if>
                 </form>
             </body>
         </html>

@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 may. 2022, 9:25:13
+    Author     : daw1
+*/
+body{
+    width: 90%;
+    margin: 0 auto; 
+}
+.respuestas{
+    border:2px black dotted;
+    border-collapse: separate;
+    border-spacing: 9px;
+    background-color: whitesmoke;
+    margin: 3px;
+}
+fieldset{
+    background-color: #cccccc;
+    padding: 0;
+    border-collapse: collapse;
+    border-color: transparent;
+}
+.enunciado{
+    background-color: whitesmoke;
+    font-weight: bolder;
+}
+.pregunta{
+    border: 2px #666666 solid;
+    background-color: whitesmoke;
+    border-collapse: collapse;
+}
+form{
+    background-color: #cccccc;
+    padding: 9px;
+    border: 2px solid #666666;
+}
+#botones{
+    background-color: white;
+    position: absolute;
+    left: 45%;
+    height: 3em;
+    width: 100%;
+    margin-top: 1.5em;
+}
+#botones input{
+    margin: 0.25em;
+    right: 50%;
+    border-radius: 3px;
+    border: 1px #cccccc solid;
+}

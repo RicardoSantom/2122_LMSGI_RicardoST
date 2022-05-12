@@ -16,7 +16,7 @@ and open the template in the editor.
         <language>es-ES</language>
         <pubDate>Tue, 01 Mar 2022 06:13:05 GMT</pubDate>
         <copyright>Ricardo Santiago Tomé</copyright>
-        <lastBuildDate>Tue, 01 Mar 2022 06:13:05 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 May 2022 18:07:00 GMT</lastBuildDate>
         <skipDays>
             <day>Sunday</day>
             <day>Saturday</day>
@@ -54,20 +54,36 @@ and open the template in the editor.
         </item>
         <item>
             <title>Prácticas ud04</title>
-            <link>http://daw106.ieslossauces.es../ud4</link>
+            <link>https://daw106.ieslossauces.es/ud4/01.xml</link>
             <description>Prácticas de la 01  a la 11 de XML-DTD-XSD</description>
             <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
             <pubDate>Tue, 01 Mar 2022 06:13:05 GMT</pubDate>
-            <guid isPermaLink="true">http://daw106.ieslossauces.es/ud4</guid>
+            <guid isPermaLink="true">http://daw106.ieslossauces.es/ud4/01.xml</guid>
             <enclosure url="http://daw106.ieslossauces.es/images/ies_los_sauces.jpg"  length="10642" type="image/jpg"/>
         </item>
         <item>
             <title>Prácticas ud05</title>
-            <link>http://daw106.ieslossauces.es/ud5</link>
+            <link>http://daw106.ieslossauces.es/ud5/01.xml</link>
             <description>Prácticas de X-PATH</description>
             <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
             <pubDate>Tue, 01 Mar 2022 06:13:05 GMT</pubDate>
-            <guid isPermaLink="true">http://daw106.ieslossauces.es/ud5</guid>
+            <guid isPermaLink="true">http://daw106.ieslossauces.es/ud5/01.xml</guid>
+        </item>
+        <item>
+            <title>Prácticas ud06</title>
+            <link>https://daw106.ieslossauces.es/index.html/#unidad6</link>
+            <description>Plantillas de estilos XSLT aplicadas a documentos XML</description>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Fri, 06 May 2022 18:07:00 GMT</pubDate>
+            <guid isPermaLink="true">https://daw106.ieslossauces.es/index.html/#unidad6</guid>
+        </item>
+        <item>
+            <title>Práctica ud06/05 meses.xml + examen.xml</title>
+            <link>https://daw106.ieslossauces.es/index.html/#unidad6</link>
+            <description>Plantillas de estilos XSLT aplicadas un documento con referencia a otro documento externo</description>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Fri, 06 May 2022 18:07:00 GMT</pubDate>
+            <guid isPermaLink="true">https://daw106.ieslossauces.es/ud6/examen.xsl</guid>
         </item>
     </channel>
 </rss>
