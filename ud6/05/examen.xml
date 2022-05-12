@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="05.xsl" type="text/xsl"?>
+<!--<?xml-stylesheet href="examen.xsl" type="text/xsl"?>-->
+<!--La instrucción de procesamiento que dejo comentada da problemas de visualización en el navegador.
+Su función es indicarle al entorno de desarrollo que hoja de estilos se ha de aplicar al documento xml-->
 <examen>
     <datos>
         <nombreCiclo>Desarrollo de Aplicaciones Web</nombreCiclo>
