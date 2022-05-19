@@ -21,7 +21,7 @@
     </tbody>
   </table>
   <ul>
-     {for $a in //book
+     {for $a in /bookstore/book
     return <li  class="{data($a//@category)}"
     >{$a/title/text()}</li>}
   </ul>
