@@ -189,8 +189,6 @@ imágines animadas*/
     display: table;
     clear: both;
 }
-li a{background-color: whitesmoke;}
-li p{background-color: #cccccc;}
 .botonDesplegable{
     display: inline-block;
     text-align: center;
@@ -283,7 +281,7 @@ section h3{
 }
 #section1 ul,#section2 ul,#section3 ul,#section4 ul,#section5 ul,#section6 ul{
     border:1px darkslategrey solid;
-    box-shadow: 6px -3px 5px black;
+    box-shadow: 2px 2px 2px black;
     height: 12em;
     max-width: 12em;
     min-width: 10em;
@@ -296,17 +294,27 @@ section h3{
     position:relative;
     z-index: 2;
 }
+section li{
+    padding:0.65em;
+}
+section ul p{
+    background-color: #006868;
+    color: whitesmoke;
+    border-radius: 15%;
+}
+section ul a{
+    background-color: #00b68b;
+    border-radius: 5%;
+}
+#section1 ul:hover,#section2 ul:hover,#section3 ul:hover,#section4 ul:hover,
+#section5 ul:hover,#section6 ul:hover{
+    box-shadow: 6px 6px 6px 6px black;
+}
 #section1:nth-child(1),#section3:nth-child(1),#section4:nth-child(1),#section5:nth-child(1),#section6:nth-child(1){
     float:left;
 }
 #section1:nth-child(n+12),#section3:nth-child(11),#section4:nth-child(11),#section5:nth-child(11),#section6:nth-child(11){
     float:right;
-}
-#section1 li,#section2 li,#section3 li,#section4 li,#section5 li,#section6 li{
-    padding:0.65em;
-}
-#section1 li p,#section2 li p,#section3 li p,#section4 li p,#section5 li p,#section6 li p{
-    color: black;
 }
 #section1 li a,#section2 li a,#section3 li a,#section4 li a,#section5 li a,#section6 li a{
     color: #b6675b;
@@ -354,20 +362,29 @@ section h3{
     position: relative;
     z-index: 2;
 }
-#unidad4:before,#unidad7:before {
+/*#unidad4:before,#unidad7:before {
     content: ' ';
     display: inline-grid;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 80%;
-    height: 80%;
+    left: 25%;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
     z-index: 1;
     opacity: 0.6;
-    background-image: url(../images/xml_filetype_icon.png);
-    background-repeat: repeat-y;
-    background-size: contain;
+    background-image: url(../images/xml1.png);
+    background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
+}*/
+#unidad4{
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-image: url(../images/xml1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 #section2:nth-child(1){float:left;}
 #section2:nth-child(n+5){float:right;}
@@ -429,7 +446,6 @@ section3 ul,#section4 ul,#section5 ul,#section6 ul{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-#rss:hover{}
 .enlaces:hover{color: goldenrod;}
 footer{
     position:fixed;

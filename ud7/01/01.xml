@@ -1,0 +1,8 @@
+<xml>
+  <libros>
+    <libro>Everyday Italian</libro>
+    <libro>Harry Potter</libro>
+    <libro>Learning XML</libro>
+    <libro>XQuery Kick Start</libro>
+  </libros>
+</xml>
