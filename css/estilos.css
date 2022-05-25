@@ -145,7 +145,6 @@ imágines animadas*/
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 /* Contenido desplegable oculto por defecto */
 .contenidoDesplegable {
     display: none;
@@ -171,7 +170,9 @@ imágines animadas*/
     padding: 10px;
     background-color: #ccc;
     height: 250px;
+    font-weight: bolder;
 }
+.columna h3{color:#999999}
 .columna a {
     float: none;
     color: black;
@@ -236,6 +237,24 @@ main{
     height: 750em;
     display: contents;
     margin: 0 auto;
+}
+.info{
+    width: 10%;
+    height: 5%;
+    background-color: #003333;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 5%;
+    margin-left: 1em;
+    padding: 0.5em;
+}
+.info a{
+    width: 95%;
+    color: #b6675b;
+    text-decoration:double underline #EC7063;
+    text-underline-offset: 20%;   
 }
 section h3{
     font-size: 30px;
@@ -341,16 +360,16 @@ section ul a{
 #unidad3{
     padding-top: 2em;
     padding-bottom: 1em;
-    width:98%;
+    width:80%;
     margin:0 auto;
-    max-height: 70em;
-    display: inline-grid;
+    max-height: 100em;
+    display: inline-block;
     position:relative;
     justify-content:center;
-    max-height: 1500px;
+    left: 10%;
 
 }
-#unidad4,#unidad6,#unidad7{
+#unidad4,#unidad6{
     padding-top: 2em;
     padding-bottom: 2em;
     background-color:#f4f4f4;
@@ -392,15 +411,16 @@ section3 ul,#section4 ul,#section5 ul,#section6 ul{
     height: 16em;
     max-height: 16em;
 }
-#unidad5{
+#unidad5,#unidad7{
     padding-top: 2em;
     padding-bottom: 3em;
-    width:98%;
+    width:80%;
     margin:0 auto;
-    max-height: 90em;
-    display: inline-grid;
+    max-height: 120em;
+    display: inline-block;
     position:relative;
-    justify-content:center
+    justify-content:center;
+    left: 10%;
 }
 #unidad6:before{
     content: ' ';
@@ -417,7 +437,7 @@ section3 ul,#section4 ul,#section5 ul,#section6 ul{
     background-size: contain;
     background-position: center center;
 }
-#section2 ul:nth-child(odd),#section4 ul:nth-child(odd),#section6:nth-child(odd){
+#section2 ul:nth-child(odd),#section3 ul:nth-child(odd),#section4 ul:nth-child(odd),#section5 ul:nth-child(odd),#section6:nth-child(odd){
     background-color: #ddd;
 }
 #github{

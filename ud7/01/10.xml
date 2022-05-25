@@ -1,0 +1,6 @@
+<libros>
+  <libro autores="1">Everyday Italian</libro>
+  <libro autores="1">Harry Potter</libro>
+  <libro autores="5">XQuery Kick Start</libro>
+  <libro autores="1">Learning XML</libro>
+</libros>

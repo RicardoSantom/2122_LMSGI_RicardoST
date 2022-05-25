@@ -1,0 +1,37 @@
+{
+    "name": "Baloncesto Daw1",
+    "color": "amarillo pollito",
+    "estadio": "Cancha IES Los Sauces",
+    "historico": true,
+    "web": null,
+    "base": [
+        {
+            "jugador": "Luis",
+            "dorsal": 1
+        },
+        {
+            "jugador": "Manuel",
+            "dorsal": 2
+        }
+    ],
+    "alero": [
+        {
+            "jugador": "Víctor",
+            "dorsal": 3
+        },
+        {
+            "jugador": "Leticia",
+            "dorsal": 4
+        }
+    ],
+    "pivot": [
+        {
+            "jugador": "Apa",
+            "dorsal": 5
+        },
+        {
+            "jugador": "Ricardo",
+            "dorsal": 6
+        }
+    ]
+}
