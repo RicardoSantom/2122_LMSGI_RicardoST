@@ -1,0 +1,74 @@
+<table>
+  <thead>
+    <tr>
+      <th>
+      Título
+    </th>
+      <th>
+      Autor
+    </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Everyday Italian</td>
+      <td>
+        <ul>
+          <li>Giada De Laurentiis</li>
+          <li>J K. Rowling</li>
+          <li>James McGovern</li>
+          <li>Per Bothner</li>
+          <li>Kurt Cagle</li>
+          <li>James Linn</li>
+          <li>Vaidyanathan Nagarajan</li>
+          <li>Erik T. Ray</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Harry Potter</td>
+      <td>
+        <ul>
+          <li>Giada De Laurentiis</li>
+          <li>J K. Rowling</li>
+          <li>James McGovern</li>
+          <li>Per Bothner</li>
+          <li>Kurt Cagle</li>
+          <li>James Linn</li>
+          <li>Vaidyanathan Nagarajan</li>
+          <li>Erik T. Ray</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>XQuery Kick Start</td>
+      <td>
+        <ul>
+          <li>Giada De Laurentiis</li>
+          <li>J K. Rowling</li>
+          <li>James McGovern</li>
+          <li>Per Bothner</li>
+          <li>Kurt Cagle</li>
+          <li>James Linn</li>
+          <li>Vaidyanathan Nagarajan</li>
+          <li>Erik T. Ray</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Learning XML</td>
+      <td>
+        <ul>
+          <li>Giada De Laurentiis</li>
+          <li>J K. Rowling</li>
+          <li>James McGovern</li>
+          <li>Per Bothner</li>
+          <li>Kurt Cagle</li>
+          <li>James Linn</li>
+          <li>Vaidyanathan Nagarajan</li>
+          <li>Erik T. Ray</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>

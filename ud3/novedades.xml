@@ -71,18 +71,26 @@ and open the template in the editor.
         </item>
         <item>
             <title>Prácticas ud06</title>
-            <link>https://daw106.ieslossauces.es/index.html/#unidad6</link>
+            <link>https://daw106.ieslossauces.es/ud6/01.xsl</link>
             <description>Plantillas de estilos XSLT aplicadas a documentos XML</description>
             <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
             <pubDate>Fri, 06 May 2022 18:07:00 GMT</pubDate>
-            <guid isPermaLink="true">https://daw106.ieslossauces.es/index.html/#unidad6</guid>
+            <guid isPermaLink="true">https://daw106.ieslossauces.es/ud6/01.xsl</guid>
         </item>
         <item>
             <title>Práctica ud06/05 meses.xml + examen.xml</title>
-            <link>https://daw106.ieslossauces.es/index.html/#unidad6</link>
-            <description>Plantillas de estilos XSLT aplicadas un documento con referencia a otro documento externo</description>
+            <link>https://daw106.ieslossauces.es/ud06/05/examen.xsl</link>
+            <description>Plantillas de estilos XSLT aplicadas en un documento con referencia a otro documento externo</description>
             <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
             <pubDate>Fri, 06 May 2022 18:07:00 GMT</pubDate>
+            <guid isPermaLink="true">https://daw106.ieslossauces.es/ud06/05/examen.xsl</guid>
+        </item>
+        <item>
+            <title>Práctica ud07/01</title>
+            <link>https://daw106.ieslossauces.es/ud07/01/01.xq</link>
+            <description>Manejo de información con XQUERY</description>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Tue, 24 May 2022 18:07:00 GMT</pubDate>
             <guid isPermaLink="true">https://daw106.ieslossauces.es/ud6/examen.xsl</guid>
         </item>
     </channel>
