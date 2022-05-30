@@ -15,11 +15,10 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/">
-        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;
-        </xsl:text>
+        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
         <xsl:apply-templates select="comment()"/>
-        <xsl:text>
-        </xsl:text>
+<xsl:text>
+</xsl:text>
         <html>
             <head>
                 <title>04.xsl</title>

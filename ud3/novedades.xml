@@ -93,5 +93,13 @@ and open the template in the editor.
             <pubDate>Tue, 24 May 2022 18:07:00 GMT</pubDate>
             <guid isPermaLink="true">https://daw106.ieslossauces.es/ud6/examen.xsl</guid>
         </item>
+        <item>
+            <title>Práctica ud08</title>
+            <link>https://daw106.ieslossauces.es/plantillas/infojson.html</link>
+            <description>Almacenamiento de información con JSON</description>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Sun, 29 May 2022 07:07:00 GMT</pubDate>
+            <guid isPermaLink="true">https://daw106.ieslossauces.es/plantillas/infojson.html</guid>
+        </item>
     </channel>
 </rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<unidad numero="8">
+    <practica numero="01">
+        <archivo>01.json</archivo>
+    </practica>
+    <practica numero="02">
+        <archivo>02.json</archivo>
+    </practica>
+    <practica numero="03">
+        <archivo>03.json</archivo>
+        <archivo>03.xml</archivo>
+        <archivo>03.xsl</archivo>
+    </practica>
+</unidad>

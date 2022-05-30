@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!--
-    Document   : 03.xsl
-    Created on : 23 de mayo de 2022, 9:27
-    Author     : Usuario
-    Description:
-        Purpose of transformation follows.
--->
-
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="text"/>
-    <xsl:template match="consolas">
-        <xsl:text>{
-        &quot;</xsl:text>
-        <xsl:value-of select="name()"/><xsl:text>&quot;: [
-            {
-        </xsl:text>
-        <xsl:text></xsl:text><xsl:apply-templates select="consola"/>
+    <xsl:template match="/consolas">
+    <xsl:value-of select="concat('{')"/>
+    <xsl:text>
+    </xsl:text>
+        <xsl:value-of select="concat('&quot;',name(),'&quot;',':')"/>[
+        <xsl:apply-templates select="consola"/>
+        <xsl:text>
+    </xsl:text>
+        <xsl:value-of select="concat(']')"/>
+    <xsl:text>
+</xsl:text>
+<xsl:value-of select="concat('}')"/>
+<xsl:text>
+</xsl:text>
     </xsl:template>
     <xsl:template match="consola">
-        <xsl:value-of select="concat('&quot;',name(nombre),':')"></xsl:value-of>
-        <xsl:value-of select="concat('&quot;',fabricante(nombre),':')"></xsl:value-of>
-        <xsl:value-of select="concat('&quot;',anyo(nombre),':')"></xsl:value-of>
+        <xsl:value-of select="concat('{ ')"/>
+        <xsl:apply-templates select="*"/>
+        <xsl:value-of select="concat('}')"/>
+        <xsl:if test="position()!=last()">
+            <xsl:value-of select="concat(',')"/>
+            <xsl:text>
+        </xsl:text>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="*">
+            <xsl:text>            
+            </xsl:text>
+            <xsl:value-of select="concat('&quot;',name(),'&quot;',':','&quot;')"/>
+        <xsl:value-of select="current()"/>
+        <xsl:value-of select="concat('&quot;')"/>
+        <xsl:text><xsl:if test="position()!=last()"><xsl:value-of select="concat(',')"/></xsl:if>
+        </xsl:text>
     </xsl:template>
 </xsl:stylesheet>
