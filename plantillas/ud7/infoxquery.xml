@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<unidad numero="7" tipo="xquery">
+    <practica numero="01">
+        <archivo>01.xml</archivo>
+        <archivo>01.xq</archivo>
+        <archivo>02.1.xq</archivo>
+        <archivo>02.xml</archivo>
+        <archivo>03.html</archivo>
+        <archivo>03.xq</archivo>
+        <archivo>04.xml</archivo>
+        <archivo>04.xq</archivo>
+        <archivo>05.html</archivo>
+        <archivo>05.xq</archivo>
+        <archivo>06.txt</archivo>
+        <archivo>06.xq</archivo>
+        <archivo>07.xml</archivo>
+        <archivo>07.xq</archivo>
+        <archivo>08.html</archivo>
+        <archivo>08.xq</archivo>
+        <archivo>09.1.xq</archivo>
+        <archivo>09.1.txt</archivo>
+        <archivo>09.xq</archivo>
+        <archivo>10.xml</archivo>
+        <archivo>10.xq</archivo>
+        <archivo>11.1.xq</archivo>
+        <archivo>11.2.xq</archivo>
+        <archivo>11.xml</archivo>
+        <archivo>11.xq</archivo>
+    </practica>
+</unidad>

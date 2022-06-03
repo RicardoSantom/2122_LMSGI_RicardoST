@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-    Document   : infojson.xsl
-    Created on : 30 de mayo de 2022, 6:30
+    Document   : infoxquery.xsl
+    Created on : 31 de mayo de 2022, 4:13
     Author     : Usuario
     Description:
         Purpose of transformation follows.
@@ -25,14 +25,14 @@
                 <xsl:call-template name="metaWeb">
                     <xsl:with-param name="titulo" select="concat('Información sobre ',unidad/@tipo)"/>
                     <xsl:with-param name="keywords" select="concat('xml,xslt',',',unidad/@tipo)"/>
-                    <xsl:with-param name="description" select="'Almacenamiento de datos en un formato ligero'"/>
+                    <xsl:with-param name="description" select="'Procesamiento de nodos información'"/>
                 </xsl:call-template>
                 <xsl:call-template name="estiloInterno"/>
             </head>
             <body>
                 <xsl:call-template name="info">
                     <xsl:with-param name="tituloPrincipal" select="unidad/@tipo"/>
-                    <xsl:with-param name="tituloSecundario" select="'Almacenamiento de información en formato ligero'"/>
+                    <xsl:with-param name="tituloSecundario" select="'Procesamiento de nodos información'"/>
                     <xsl:with-param name="parrafo" select="'Esta página web se ha generado aplicando una plantilla XSLT a un documento XML'"/>
                 </xsl:call-template>
                 <div>

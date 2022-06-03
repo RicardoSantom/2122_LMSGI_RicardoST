@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unidad numero="3" tipo="rss">
+    <practica numero="01">
+        <archivo>atom.xml</archivo>
+        <archivo>elpais.xml</archivo>
+        <archivo>feedbro-subscriptions-20220117-093553.opml</archivo>
+        <archivo>index.html</archivo>
+        <archivo>novedades.xml</archivo>
+    </practica>
+</unidad>

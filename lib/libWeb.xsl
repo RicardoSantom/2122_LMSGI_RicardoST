@@ -53,4 +53,11 @@
         </xsl:comment>
         </xsl:text>
     </xsl:template>
+    <xsl:template name="footer">
+        <footer>
+            <address>
+                2021-22  IES LOS SAUCES.Todos los derechos reservados.<a href="mailto:ricardo.santom@educa.jcyl.es" target="_top">Ricardo Santiago Tomé</a>
+            </address>
+        </footer>
+    </xsl:template>
 </xsl:stylesheet>

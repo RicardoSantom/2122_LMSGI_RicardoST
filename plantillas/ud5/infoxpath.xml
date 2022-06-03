@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unidad numero="5" tipo="xpath">
+    <practica numero="horario">
+        <archivo>horario.dtd</archivo>
+        <archivo>horario.xml</archivo>
+        <archivo>horario.xsd</archivo>
+        <archivo>horario1.xml</archivo>
+        <archivo>horarioLeticia.xml</archivo>
+        <archivo>horario.xml</archivo>
+    </practica>
+    <practica numero="pruebaEX02_20210309_RicardoST">
+        <archivo>examen02.yml</archivo>
+        <archivo>index.html</archivo>
+        <archivo>mapaestelar.dtd</archivo>
+        <archivo>mapaestelar.xml</archivo>
+        <archivo>mapaestelar.xsd</archivo>
+        <archivo>rss.xml</archivo>
+    </practica>
+    <practica numero="01">
+        <archivo>01.dtd</archivo>
+        <archivo>01.xml</archivo>
+        <archivo>01.xsd</archivo>
+    </practica>
+    <practica numero="02">
+        <archivo>02.dtd</archivo>
+        <archivo>02.xml</archivo>
+        <archivo>02.xsd</archivo>
+    </practica>
+    <practica numero="03">
+        <archivo>03.dtd</archivo>
+        <archivo>03.xml</archivo>
+        <archivo>03.xsd</archivo>
+        <archivo>03.xsl</archivo>
+        <archivo>03_1.html</archivo>
+    </practica>
+</unidad>

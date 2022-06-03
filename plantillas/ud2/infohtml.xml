@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unidad numero="2" tipo="html">
+    <practica numero="01">
+        <archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+        <archivo>local.html</archivo>
+    </practica>
+    <practica numero="02">
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="03">
+        <archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="04">
+        <archivo>css/estiloss.css</archivo>
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="05">
+        <<archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="06">
+        <archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="07">
+        <archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="08">
+        <archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="09">
+        <archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="10">
+        <archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="11">
+        <archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+    </practica>
+    <practica numero="12">
+        <archivo>css/estilos.css</archivo>
+        <archivo>index.html</archivo>
+        <archivo>form-inicio.html</archivo>
+    </practica>
+</unidad>

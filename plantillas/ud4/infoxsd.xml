@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unidad numero="4" tipo="xsd">
+    <practica numero="01">
+        <archivo>01.xml</archivo>
+        <archivo>01.xsd</archivo>
+    </practica>
+    <practica numero="02">
+        <archivo>02.xml</archivo>
+        <archivo>02.xsd</archivo>
+    </practica>
+    <practica numero="03">
+        <archivo>03.css</archivo>
+        <archivo>03.html</archivo>
+        <archivo>03.xml</archivo>
+        <archivo>03.xsl</archivo>
+    </practica>
+    <practica numero="04">
+        <archivo>04.xml</archivo>
+        <archivo>04.xsd</archivo>
+    </practica>
+    <practica numero="05">
+        <archivo>05.dtd</archivo>
+        <archivo>05.xml</archivo>
+        <archivo>05.xsd</archivo>
+        <archivo>05_2.xml</archivo>
+    </practica>
+    <practica numero="06">
+        <archivo>06.xml</archivo>
+    </practica>
+    <practica numero="07">
+        <archivo>07.xml</archivo>
+        <archivo>07.xsd</archivo>
+    </practica>
+    <practica numero="08">
+        <archivo>08.xml</archivo>
+        <archivo>08.xsd</archivo>
+    </practica>
+    <practica numero="09">
+        <archivo>09.xml</archivo>
+    </practica>
+    <practica numero="10">
+        <archivo>10.dtd</archivo>
+        <archivo>10.xml</archivo>
+        <archivo>10.xsd</archivo>
+    </practica>
+    <practica numero="11">
+        <archivo>11.dtd</archivo>
+        <archivo>11.xml</archivo>
+        <archivo>11.xsd</archivo>
+    </practica>
+</unidad>

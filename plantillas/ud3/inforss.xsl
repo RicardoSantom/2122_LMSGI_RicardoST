@@ -24,15 +24,15 @@
             <head>
                 <xsl:call-template name="metaWeb">
                     <xsl:with-param name="titulo" select="concat('Información sobre ',unidad/@tipo)"/>
-                    <xsl:with-param name="keywords" select="concat('xml,xslt',',',unidad/@tipo)"/>
-                    <xsl:with-param name="description" select="'Almacenamiento de datos en un formato ligero'"/>
+                    <xsl:with-param name="keywords" select="concat('rss,atom,opml,feed',',',unidad/@tipo)"/>
+                    <xsl:with-param name="description" select="'Feeds y suscripciones a rss y atom'"/>
                 </xsl:call-template>
                 <xsl:call-template name="estiloInterno"/>
             </head>
             <body>
                 <xsl:call-template name="info">
                     <xsl:with-param name="tituloPrincipal" select="unidad/@tipo"/>
-                    <xsl:with-param name="tituloSecundario" select="'Almacenamiento de información en formato ligero'"/>
+                    <xsl:with-param name="tituloSecundario" select="'Feeds y suscripciones a rss y atom'"/>
                     <xsl:with-param name="parrafo" select="'Esta página web se ha generado aplicando una plantilla XSLT a un documento XML'"/>
                 </xsl:call-template>
                 <div>

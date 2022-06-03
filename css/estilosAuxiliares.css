@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 jun. 2022, 7:32:49
+    Author     : Usuario
+*/
+body{
+    background-color: #cccccc;
+    color: #6699ff;
+    font-size: 1.5em;
+    text-align: center;
+}
+div{
+    padding-top: 2em;
+}
+h1{
+    text-transform: uppercase;
+}
+ul li{
+    list-style: none;}
+#botonHTML{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #606898;
+    outline: none;
+    background-color: #84a578;
+    color: #0000cc;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size:0.75em;
+    display: block;
+    position: relative;
+    width: 4.5em;
+    margin-bottom: 6em;
+    margin-left: 3%;
+}
+#github{
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    text-decoration: none;
+}
+#github:before{
+    font-family: FontAwesome;
+    content:'\f09b';
+    background-color:#EC7063;
+    font-size: 2em;
+    border-radius: 50%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#rss{
+    font-size: 1.4em;
+     text-decoration: none;
+}
+#rss:before{
+    font-family:FontAwesome;
+    content:'\f09e';
+    color:silver;
+    font-size: 1.4em;
+    border-radius: 15%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.enlaces:hover{color: goldenrod;}
+footer{
+    position:fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+    background-color: #84a578;
+    max-height: 3em;
+    z-index: 2;
+    text-align: center;
+    justify-content: center;
+}
+footer address{
+    padding: 0.5em;
+}
+footer a{
+    margin-top: 0.25em;
+}

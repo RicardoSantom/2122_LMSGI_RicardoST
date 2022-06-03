@@ -1,0 +1,30 @@
+{
+    "usuarios": [
+
+        {
+            "usuario1": {
+                "colorDeFondo": "azul"
+                ,
+                "tamañoDelTexto": "2em"
+                ,   
+                "colorTexto": "blanco"
+                ,
+                "idioma": "Castellano"
+                ,
+                "pantallaInicio": "Galeria"
+            }
+            ,
+            "usuario2": {
+                "colorDeFondo": "gris"
+                ,
+                "tamañoDelTexto": "2em"
+                ,   
+                "colorTexto": "negro"
+                ,
+                "idioma": "Español machupichu"
+                ,
+                "pantallaInicio": "Logo Windows11"
+            }
+        }
+    ]
+}

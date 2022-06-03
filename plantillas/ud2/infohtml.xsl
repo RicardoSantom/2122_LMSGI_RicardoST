@@ -25,14 +25,14 @@
                 <xsl:call-template name="metaWeb">
                     <xsl:with-param name="titulo" select="concat('Información sobre ',unidad/@tipo)"/>
                     <xsl:with-param name="keywords" select="concat('xml,xslt',',',unidad/@tipo)"/>
-                    <xsl:with-param name="description" select="'Almacenamiento de datos en un formato ligero'"/>
+                    <xsl:with-param name="description" select="'Lenguaje de marcado para construcción y diseño de páginas web'"/>
                 </xsl:call-template>
                 <xsl:call-template name="estiloInterno"/>
             </head>
             <body>
                 <xsl:call-template name="info">
                     <xsl:with-param name="tituloPrincipal" select="unidad/@tipo"/>
-                    <xsl:with-param name="tituloSecundario" select="'Almacenamiento de información en formato ligero'"/>
+                    <xsl:with-param name="tituloSecundario" select="'Lenguaje de marcado para construcción y diseño de páginas web'"/>
                     <xsl:with-param name="parrafo" select="'Esta página web se ha generado aplicando una plantilla XSLT a un documento XML'"/>
                 </xsl:call-template>
                 <div>

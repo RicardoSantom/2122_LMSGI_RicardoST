@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-    Document   : infojson.xsl
-    Created on : 30 de mayo de 2022, 6:30
+    Document   : infoxslt.xsl
+    Created on : 31 de mayo de 2022, 5:15
     Author     : Usuario
     Description:
         Purpose of transformation follows.
