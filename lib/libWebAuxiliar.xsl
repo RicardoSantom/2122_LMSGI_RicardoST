@@ -57,13 +57,13 @@
     </xsl:template>
     <xsl:template name="estiloInterno">
         <xsl:element name="style">
-            
         </xsl:element>
     </xsl:template>
     <xsl:template name="info">
         <xsl:param name="tituloPrincipal"/>
         <xsl:param name="tituloSecundario"/>
         <xsl:param name="parrafo"/>
+        <xsl:param name="parrafo2"/>
         <h1>
             <xsl:value-of select="$tituloPrincipal"/>
         </h1>
@@ -72,6 +72,9 @@
         </h2>
         <p>
             <xsl:value-of select="$parrafo"/>
+        </p>
+        <p>
+            <xsl:value-of select="$parrafo2"/>
         </p>
     </xsl:template>
     <xsl:template name="enlaces">
@@ -99,6 +102,28 @@
                     <xsl:value-of select="concat('Enlace a plantilla XSL')"/>
                 </xsl:element>
             </xsl:element>
+            <xsl:element name="li">
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="concat('../../lib/libWebAuxiliar.xsl')"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="title">
+                        <xsl:value-of select="concat('libWebAuxiliar.xsl')"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="concat('Enlace a plantilla libWebAuxiliar.xsl')"/>
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="li">
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="concat('../../lib/libWebEnlaces.xsl')"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="title">
+                        <xsl:value-of select="concat('libWebEnlaces.xsl')"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="concat('Enlace a plantilla libWebEnlaces.xsl')"/>
+                </xsl:element>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
     <xsl:template name="botonMenu">
@@ -120,7 +145,7 @@
     <xsl:template name="footer">
         <xsl:element name="footer">
             <xsl:element name="address">
-                <xsl:value-of select="concat('2021-22  IES LOS SAUCES.Todos los derechos reservados.')"/>
+                <xsl:value-of select="concat('2021-22  IES LOS SAUCES . Todos los derechos reservados. ')"/>
                 <xsl:element name="a">
                     <xsl:attribute name="href">
                         <xsl:value-of select="concat('mailto:ricardo.santom@educa.jcyl.es')"/>

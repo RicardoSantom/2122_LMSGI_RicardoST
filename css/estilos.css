@@ -457,10 +457,16 @@ footer{
     background-color: #84a578;
     max-height: 6em;
     z-index: 2;
+    justify-content: center;
 }
 footer address{
     padding: 0.5em;
     font-size: 1.25em;
+    color: #990033;
+}
+footer address a{
+    color: #000099;
+    padding-left: 0.5em;
 }
 footer a{
     margin-top: 0.25em;

@@ -17,7 +17,7 @@
         <archivo>index.html</archivo>
     </practica>
     <practica numero="05">
-        <<archivo>css/estilos.css</archivo>
+        <archivo>css/estilos.css</archivo>
         <archivo>index.html</archivo>
     </practica>
     <practica numero="06">

@@ -33,7 +33,8 @@
                 <xsl:call-template name="info">
                     <xsl:with-param name="tituloPrincipal" select="unidad/@tipo"/>
                     <xsl:with-param name="tituloSecundario" select="'Lenguaje de marcado para construcción y diseño de páginas web'"/>
-                    <xsl:with-param name="parrafo" select="'Esta página web se ha generado aplicando una plantilla XSLT a un documento XML'"/>
+                    <xsl:with-param name="parrafo" select="'Esta página web se ha generado aplicando una plantilla XSLT a un documento XML.'"/>
+                    <xsl:with-param name="parrafo2" select="'Dicha plantilla XSLT se ha generado con una plantilla import más una plantilla include'"/>
                 </xsl:call-template>
                 <div>
                     <xsl:call-template name="enlaces">

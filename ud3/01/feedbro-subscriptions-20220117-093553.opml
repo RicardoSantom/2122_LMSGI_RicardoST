@@ -4,9 +4,11 @@
 <title>Feed Subscriptions</title>
 </head>
 <body>
-      <outline text="Lo pais - Ultimas noticias -Atom" title="El pais - Ultimas noticias" type="rss" 
-            xmlUrl="http://192.168.2.114/ud3/elpais.xml" htmlUrl="https://elpais.com"/>
+      <outline text="Lo pais - Ultimas noticias - Rss" title="El pais - Ultimas noticias" type="rss" 
+            xmlUrl="http://daw106.ieslossauces.es/ud3/elpais.xml" htmlUrl="https://elpais.com"/>
       <outline text="Lo pais - Ultimas noticias - Atom" title="El pais - Ultimas noticias" type="rss" 
-            xmlUrl="http://192.168.2.114/ud3/atom.xml" htmlUrl="https://elpais.com"/>
+            xmlUrl="http://daw106.ieslossauces.es/ud3/atom.xml" htmlUrl="https://elpais.com"/>
+      <outline text="Novedades indice de prácticas de LMSGI por Ricardo Santiago Tomé" title="Novedades - Ricardo Santiago Tomé" type="rss" 
+            xmlUrl="http://daw106.ieslossauces.es/ud3/novedades.xml" htmlUrl="http://daw106.ieslossauces.es/"/>
 </body>
 </opml>

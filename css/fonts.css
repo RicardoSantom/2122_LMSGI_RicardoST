@@ -53,15 +53,15 @@
 }
 @font-face{
     font-family : 'Goldman-Bold-ttf';
-    src: url(fonts/Goldman-Bold.ttf);
+    src: url(../fonts/Goldman-Bold.ttf);
 }
 @font-face{
     font-family : 'Goldman-Regular-ttf';
     src: url(../fonts/Goldman-Regular.ttf);
 }
 @font-face{
-    font-family : 'Architects Daughter-Regular-ttf';
-    src: url(../fonts/ArchitectsDaughter/ArchitectsDaughter-Regular.ttf);
+    font-family : 'NerkoOne-Regular';
+    src: url(../fonts/NerkoOne-Regular.ttf);
 }
 @font-face{
     font-family : 'FrederickattheGreat-Regular-ttf';
@@ -90,4 +90,12 @@
 @font-face{
     font-familly : 'Permanent Marker';
     src: url(../fonts/PermanentMarker-Regular.ttf);
+}
+@font-face{
+    font-familly : 'KdamThmorPro';
+    src: url(../fonts/KdamThmorPro-Regular.ttf);
+}
+@font-face{
+    font-familly : 'Roboto-Medium';
+    src: url(../fonts/Roboto-Medium.ttf);
 }
