@@ -10,5 +10,7 @@
             xmlUrl="http://daw106.ieslossauces.es/ud3/atom.xml" htmlUrl="https://elpais.com"/>
       <outline text="Novedades indice de prácticas de LMSGI por Ricardo Santiago Tomé" title="Novedades - Ricardo Santiago Tomé" type="rss" 
             xmlUrl="http://daw106.ieslossauces.es/ud3/novedades.xml" htmlUrl="http://daw106.ieslossauces.es/"/>
+      <outline text="Novedades examen 2ª evaluación" title="Novedades - Examen 2ª evaluación" type="rss" 
+            xmlUrl="http://daw106.ieslossauces.es/examenes/EX02_20220324_RicardoSantiagoTome.xml" htmlUrl="http://daw106.ieslossauces.es/"/>
 </body>
 </opml>
