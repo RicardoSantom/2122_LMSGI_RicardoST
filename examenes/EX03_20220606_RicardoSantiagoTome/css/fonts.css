@@ -1,0 +1,81 @@
+
+@font-face{
+    font-family:'fa-brands-400-ttf';
+    src:url(../../../fonts/fontawesome/webfonts/fa-brands-400.ttf);
+}
+@font-face{
+    font-family:'fa-brands-400-svg';
+    src:url(../../../fonts/fontawesome/webfonts/fa-brands-400.svg);
+}
+@font-face{
+    font-family:'fa-brands-400-woff';
+    src:url(../../../fontawesome/webfonts/fa-brands-400.woff);
+}
+@font-face{
+    font-family:'fa-brands-400woff2';
+    src:url(../../../fontawesome/webfonts/fa-brands-400.woff2);
+}
+@font-face{
+    font-family:'fa-regular-400-eot';
+    src:url(../../../fontawesome/webfonts/fa-regular-400.eot);
+}
+@font-face{
+    font-family:'fa-regular-400-ttf';
+    src:url(../../../fontawesome/webfonts/fa-regular-400.ttf);
+}
+@font-face{
+    font-family:'fa-regular-400-woff';
+    src:url(../../../fontawesome/webfonts/fa-regular-400.woff);
+}
+@font-face{
+    font-family:'fa-regular-400-woff2';
+    src:url(../../../fontawesome/webfonts/fa-regular-400.woff2);
+}
+@font-face{
+    font-family:'fa-solid-900-eot';
+    src:url(../../../fontawesome/webfonts/fa-solid-900.eot);
+}
+@font-face{
+    font-family:'fa-solid-400-eot';
+    src:url(../../../fontawesome/webfonts/fa-solid-400.eot);
+}
+@font-face{
+    font-family:'fa-solid-900-ttf';
+    src:url(../../../fontawesome/webfonts/fa-solid-900.ttf);
+}
+@font-face{
+    font-family:'fa-solid-900-woff';
+    src:url(../../../fontawesome/webfonts/fa-solid-900.woff);
+}
+@font-face{
+    font-family:'fa-solid-900-woff2';
+    src:url(../../../fonts/fontawesome/webfonts/fa-solid-900.woff2);
+}
+@font-face{
+    font-family : 'Goldman-Bold-ttf';
+    src: url(../../../fonts/Goldman-Bold.ttf);
+}
+@font-face{
+    font-family : 'Goldman-Regular-ttf';
+    src: url(../../../fonts/Goldman-Regular.ttf);
+}
+@font-face{
+    font-familly : 'logo_github_icon';
+    src: url(../../../fonts/fontawesome/webfonts/logo_github_icon_143196.ico);
+}
+@font-face{
+    font-familly : 'git-repository';
+    src: url(../../../fonts/fontawesome/webfonts/git-repository-fill.svg);
+}
+@font-face{
+    font-familly : 'Permanent Marker';
+    src: url(../../../fonts/PermanentMarker-Regular.ttf);
+}
+@font-face{
+    font-familly : 'KdamThmorPro';
+    src: url(../../../fonts/KdamThmorPro-Regular.ttf);
+}
+@font-face{
+    font-familly : 'Roboto-Medium';
+    src: url(../../../fonts/Roboto-Medium.ttf);
+}

@@ -445,6 +445,11 @@ section3 ul,#section4 ul,#section5 ul,#section6 ul,#section7 ul{
     -moz-osx-font-smoothing: grayscale;
 }
 .enlaces:hover{color: goldenrod;}
+#rss:hover{
+    background-color: goldenrod;
+    height: 2em;
+    border-radius: 15% 50% 15% 15%;
+}
 footer{
     position:fixed;
     display: inline-flex;

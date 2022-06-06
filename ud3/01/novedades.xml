@@ -7,7 +7,7 @@ and open the template in the editor.
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Ricardo Santiago Tomé - Novedades - LMSGI</title>
-        <link>http://daw106.ieslossauces.es</link>
+        <link>https://daw106.ieslossauces.es</link>
         <description>Novedades en las prácticas de la asignatura LMSGI</description>
         <webMaster>ricardo.santom@educa.jcyl.es</webMaster>
         <category>novedades</category>

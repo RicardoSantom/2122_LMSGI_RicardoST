@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 jun. 2022, 6:00:24
+    Author     : Usuario
+*/
+#github{
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    text-decoration: none;
+}
+#github:before{
+    font-family: 'logo-github_icon',FontAwesome;
+    content:'\f09b';
+    background-color:#EC7063;
+    font-size: 2em;
+    border-radius: 50%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#rss{font-size: 15px;
+     text-decoration: none;
+}
+#rss:before{
+    font-family:FontAwesome;
+    content:'\f09e';
+    background-color:transparent;
+    color:silver;
+    font-size: 30px;
+    border-radius: 15%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.enlaces:hover{color: goldenrod;}
+#rss:hover{
+    background-color: goldenrod;
+    height: 2em;
+    border-radius: 15% 50% 15% 15%;
+}
+footer{
+    position:fixed;
+    display: inline-flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #84a578;
+    max-height: 6em;
+    z-index: 2;
+    justify-content: center;
+}
+footer address{
+    padding: 0.5em;
+    font-size: 1.25em;
+    color: #990033;
+}
+footer address a{
+    color: #000099;
+    padding-left: 0.5em;
+}
+footer a{
+    margin-top: 0.25em;
+}
