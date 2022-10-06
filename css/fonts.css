@@ -72,30 +72,30 @@
     src: url(../fonts/Parisienne-Regular.ttf);
 }
 @font-face{
-    font-familly : 'Starjedi';
+    font-family : 'Starjedi';
     src: url(../fonts/Starjedi.ttf);
 }
 @font-face{
-    font-familly : 'Starjhol';
+    font-family : 'Starjhol';
     src: url(../fonts/Starjhol.ttf);
 }
 @font-face{
-    font-familly : 'logo_github_icon';
+    font-family : 'logo_github_icon';
     src: url(../fonts/fontawesome/webfonts/logo_github_icon_143196.ico);
 }
 @font-face{
-    font-familly : 'git-repository';
+    font-family : 'git-repository';
     src: url(../fonts/fontawesome/webfonts/git-repository-fill.svg);
 }
 @font-face{
-    font-familly : 'Permanent Marker';
+    font-family : 'Permanent Marker';
     src: url(../fonts/PermanentMarker-Regular.ttf);
 }
 @font-face{
-    font-familly : 'KdamThmorPro';
+    font-family : 'KdamThmorPro';
     src: url(../fonts/KdamThmorPro-Regular.ttf);
 }
 @font-face{
-    font-familly : 'Roboto-Medium';
+    font-family : 'Roboto-Medium';
     src: url(../fonts/Roboto-Medium.ttf);
 }
